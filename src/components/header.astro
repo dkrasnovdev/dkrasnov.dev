@@ -1,0 +1,23 @@
+---
+function isCurrent(url: string) {
+  return Astro.url.pathname.replace(/(\/.*?)\/$/, "$1") === url;
+}
+
+const menu = ["snippets", "projects"];
+---
+
+<header>
+  <a href="/" aria-current={isCurrent("/") ? "page" : undefined}>dkrasnov.dev</a
+  >
+  <nav aria-label="navigation" class="flex">
+    <ul role="list" class="flex items-center gap-2">
+      {
+        menu.map((page) => (
+          <li>
+            <a href={`/${page}`}>{page}</a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
