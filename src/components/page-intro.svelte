@@ -4,3 +4,15 @@
   export let tagline: Optional<string> = undefined;
   export let animate = true;
 </script>
+
+<section>
+  <div>
+    <h1>{heading}</h1>
+    {#if subheading}
+      <p>{subheading}</p>
+    {/if}
+    {#if tagline}
+      <p>{tagline}</p>
+    {/if}
+  </div>
+</section>
