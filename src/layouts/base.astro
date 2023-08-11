@@ -1,4 +1,5 @@
 ---
+import '$style/global.css';
 export type Props = {
   title: string;
   description: string;
@@ -17,6 +18,8 @@ const { title, description } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+  <main class="max-w-xl mx-auto">
     <slot />
+    </main>
   </body>
 </html>
