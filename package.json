@@ -9,7 +9,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "format": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte --plugin=prettier-plugin-tailwindcss"
+    "format": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte --plugin=prettier-plugin-tailwindcss",
+    "lint": "eslint --ext .ts,.svelte,.astro src"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
@@ -31,13 +32,14 @@
     "eslint": "^8.46.0",
     "eslint-plugin-astro": "^0.28.0",
     "eslint-plugin-svelte": "^2.32.4",
-    "postcss": "^8.4.27"
+    "postcss": "^8.4.27",
+    "svelte-eslint-parser": "^0.32.2"
   },
   "eslintConfig": {
     "extends": [
       "plugin:@typescript-eslint/recommended",
-      "plugin:astro/recommended",
-      "plugin:svelte/recommended"
+      "plugin:svelte/recommended",
+      "plugin:astro/recommended"
     ],
     "overrides": [
       {
@@ -50,6 +52,15 @@
           "extraFileExtensions": [
             ".astro"
           ]
+        }
+      },
+      {
+        "files": [
+          "*.svelte"
+        ],
+        "parser": "svelte-eslint-parser",
+        "parserOptions": {
+          "parser": "@typescript-eslint/parser"
         }
       }
     ]
