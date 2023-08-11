@@ -14,5 +14,10 @@
     "@astrojs/tailwind": "^4.0.0",
     "astro": "^2.10.5",
     "tailwindcss": "^3.0.24"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1",
+    "prettier-plugin-astro": "^0.11.0",
+    "prettier-plugin-tailwindcss": "^0.5.2"
   }
 }
