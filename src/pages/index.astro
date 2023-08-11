@@ -1,15 +1,8 @@
 ---
 import Layout from "$layouts/base.astro";
+import PageIntro from "$components/page-intro.svelte";
 ---
 
 <Layout title="Astro.title" description="Astro.description">
-  <section class="space-y-2">
-    <h1 class="font-bold">hey, i'm dmitry krasnov 👋</h1>
-    <p>
-      I’m a web developer, self-starter and a coding enthusiast. I use
-      TypeScript and Golang to build robust solutions that deliver seamless user
-      experiences. I look forward to contributing my skills and expertise to
-      impactful projects.
-    </p>
-  </section>
+<PageIntro heading={"hey, i'm dmitrykrasnov"} />
 </Layout>
