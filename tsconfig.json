@@ -3,15 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "$components": [
-        "src/components/*"
-      ],
-      "$layouts/*": [
-        "src/layouts/*"
-      ],
-      "$style/*": [
-        "src/style/*"
-      ]
+      "$components": ["src/components/*"],
+      "$layouts/*": ["src/layouts/*"],
+      "$style/*": ["src/style/*"]
     }
   }
 }

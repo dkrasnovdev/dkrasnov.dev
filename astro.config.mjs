@@ -7,5 +7,5 @@ import svelte from "@astrojs/svelte";
 // https://astro.build/config
 export default defineConfig({
   site: "https://dkrasnov.dev",
-  integrations: [tailwind(), mdx(), svelte()]
+  integrations: [tailwind(), mdx(), svelte()],
 });
