@@ -22,6 +22,11 @@ const { title, description } = Astro.props;
   </head>
   <body>
     <Banner />
+    <a
+      href="#content"
+      class="sr-only h-12 rounded-md bg-neutral-900 transition focus:not-sr-only focus:outline-none focus:ring"
+      ><span class="m-2.5 p-2.5">Skip to Main Content</span></a
+    >
     <Header />
     <main id="content" class="flex justify-center px-page-gutter py-page-top">
       <div class="min-h-content w-full max-w-content">

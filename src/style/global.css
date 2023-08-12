@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply bg-neutral-950 text-white antialiased;
+    @apply bg-neutral-950 text-neutral-200 antialiased;
   }
 }
 
