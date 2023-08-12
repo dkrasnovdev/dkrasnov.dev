@@ -17,6 +17,7 @@
     "@astrojs/svelte": "^3.1.0",
     "@astrojs/tailwind": "^4.0.0",
     "astro": "^2.10.5",
+    "clsx": "^2.0.0",
     "eslint-plugin-jsx-a11y": "^6.7.1",
     "nanostores": "^0.9.3",
     "prettier": "^3.0.1",

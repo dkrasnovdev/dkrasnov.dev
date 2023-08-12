@@ -1,24 +1,36 @@
 ---
+import { clsx } from "clsx";
 function isCurrent(url: string) {
   return Astro.url.pathname.replace(/(\/.*?)\/$/, "$1") === url;
 }
 
-const menu = ["snippets", "projects"];
+const menu = [
+  ["home", "/"],
+  ["about", "/about"],
+];
 ---
 
-<header class="h-header-height px-page-gutter flex justify-center">
+<header class="flex h-header-height justify-center px-page-gutter">
   <div
-    class="max-w-content flex w-full items-center justify-between space-x-2.5"
+    class="flex w-full max-w-content items-center justify-between space-x-2.5"
   >
-    <a href="/" aria-current={isCurrent("/") ? "page" : undefined}
-      >dkrasnov.dev</a
-    >
-    <nav aria-label="navigation" class="flex">
-      <ul role="list" class="flex items-center gap-2">
+    <nav aria-label="navigation" class="hidden md:flex">
+      <ul role="list" class="flex items-center gap-2.5">
         {
-          menu.map((page) => (
+          menu.map(([name, href]) => (
             <li>
-              <a href={`/${page}`}>{page}</a>
+              <a
+                href={href}
+                aria-current={isCurrent(href) ? "page" : undefined}
+                class={clsx(
+                  "rounded-md p-2.5 transition hover:bg-neutral-900 hover:text-neutral-200 focus:outline-none focus:ring focus:ring-inset",
+                  {
+                    "text-neutral-500": !isCurrent(href),
+                  },
+                )}
+              >
+                {name}
+              </a>
             </li>
           ))
         }
