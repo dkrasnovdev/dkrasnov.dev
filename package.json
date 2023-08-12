@@ -10,7 +10,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write . --plugin=prettier-plugin-astro --plugin=prettier-plugin-svelte --plugin=prettier-plugin-tailwindcss",
-    "lint": "eslint --ext .ts,.svelte,.astro src"
+    "lint": "eslint --ext .ts,.tsx,.svelte,.astro src"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
@@ -51,7 +51,6 @@
     "extends": [
       "plugin:@typescript-eslint/recommended",
       "plugin:svelte/recommended",
-      "plugin:react/recommended",
       "plugin:astro/recommended"
     ],
     "overrides": [
@@ -80,11 +79,24 @@
         "files": [
           "*.tsx"
         ],
+        "extends": [
+          "plugin:react/recommended"
+        ],
         "rules": {
           "react/react-in-jsx-scope": "off",
           "react/no-unknown-property": "off"
+        },
+        "settings": {
+          "react": {
+            "version": "detect"
+          }
         }
       }
+    ],
+    "ignorePatterns": [
+      "**/*.config.js",
+      "**/*.config.cjs",
+      "**/*.d.ts"
     ]
   }
 }

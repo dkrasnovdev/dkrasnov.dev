@@ -5,7 +5,17 @@ import { commandIsOpen } from "$store";
 import { IconChevronRight } from "@tabler/icons-react";
 import { Group, Suggestion, icons } from "$data/cmdk";
 
-export default function CommandMenu({ groups, placeholder, empty, suggestions }: { groups: Array<Group>; placeholder: string; empty: string; suggestions: Array<Suggestion> }) {
+export default function CommandMenu({
+  groups,
+  placeholder,
+  empty,
+  suggestions,
+}: {
+  groups: Array<Group>;
+  placeholder: string;
+  empty: string;
+  suggestions: Array<Suggestion>;
+}) {
   const isCommandOpen = useStore(commandIsOpen);
   const [query, setQuery] = React.useState("");
 
@@ -57,45 +67,60 @@ export default function CommandMenu({ groups, placeholder, empty, suggestions }:
         <Command.Empty>
           <p className="text-center text-sm">{empty}</p>
           <div className="divide-y overflow-hidden rounded-xl border">
-            {suggestions.map(([name, href]) =>
+            {suggestions.map(([name, href]) => (
               <a
-                key={'suggestion_' + name}
+                key={"suggestion_" + name}
                 href={href}
-                className="group flex items-center space-x-2 p-3 text-sm bg-neutral-900/95 hover:bg-neutral-950 text-neutral-500 first:rounded-t-xl last:rounded-b-xl"
+                className="group flex items-center space-x-2 bg-neutral-900/95 p-3 text-sm text-neutral-500 first:rounded-t-xl last:rounded-b-xl hover:bg-neutral-950"
               >
-                <span className="transition group-hover:text-neutral-200 font-semibold">{name}</span>
+                <span className="font-semibold transition group-hover:text-neutral-200">
+                  {name}
+                </span>
                 <div className="flex-1"></div>
                 <span className="text-neutral-500 transition group-hover:text-neutral-200">
                   <IconChevronRight size={18} />
                 </span>
-              </a>)}
-
+              </a>
+            ))}
           </div>
         </Command.Empty>
-        {groups.map((g) => <Command.Group key={g.name} heading={g.name}>
-          {g.items.map((i) => <Command.Item key={g.name + i.name} value={`${g.name}_${i.name}`} onSelect={() => push(i.href)}>
-            <div className="flex h-5 w-5 items-center justify-center text-subtle transition">
-              {!!i.icon && React.createElement(icons[i.icon])}
-              {!!i.color && (
-                <div
-                  className="h-[18px] w-[18px] rounded-full border"
-                  style={{ backgroundColor: i.color }}
-                />
-              )}
-            </div>
-            <p className="font-semibold truncate text-neutral-500 transition">{i.name}</p>
-            <div className="flex-1" />
-            <p className="flex items-center space-x-2 text-neutral-500 transition">
-              {i.href.startsWith("http") ? (
-                <span>{new URL(i.href).hostname}&nbsp;↗</span>
-              ) : (
-                <IconChevronRight size={18} />
-              )}
-            </p>
-          </Command.Item>)}
-        </Command.Group>)}
-        <div aria-hidden="true" className="pointer-events-none sticky bottom-0 -mt-5 h-8 w-full"></div>
+        {groups.map((g) => (
+          <Command.Group key={g.name} heading={g.name}>
+            {g.items.map((i) => (
+              <Command.Item
+                key={g.name + i.name}
+                value={`${g.name}_${i.name}`}
+                onSelect={() => push(i.href)}
+              >
+                <div className="text-subtle flex h-5 w-5 items-center justify-center transition">
+                  {!!i.icon && React.createElement(icons[i.icon])}
+                  {!!i.color && (
+                    <div
+                      className="h-[18px] w-[18px] rounded-full border"
+                      style={{ backgroundColor: i.color }}
+                    />
+                  )}
+                </div>
+                <p className="truncate font-semibold text-neutral-500 transition">
+                  {i.name}
+                </p>
+                <div className="flex-1" />
+                <p className="flex items-center space-x-2 text-neutral-500 transition">
+                  {i.href.startsWith("http") ? (
+                    <span>{new URL(i.href).hostname}&nbsp;↗</span>
+                  ) : (
+                    <IconChevronRight size={18} />
+                  )}
+                </p>
+              </Command.Item>
+            ))}
+          </Command.Group>
+        ))}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none sticky bottom-0 -mt-5 h-8 w-full"
+        ></div>
       </Command.List>
-    </Command.Dialog >
+    </Command.Dialog>
   );
 }

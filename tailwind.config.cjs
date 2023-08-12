@@ -17,11 +17,11 @@ module.exports = {
         content: "var(--content-height)",
       },
       borderColor: {
-        DEFAULT: "#262626"
+        DEFAULT: "#262626",
       },
       ringColor: {
-        DEFAULT: "#fafafa"
-      }
+        DEFAULT: "#fafafa",
+      },
     },
   },
   plugins: [],

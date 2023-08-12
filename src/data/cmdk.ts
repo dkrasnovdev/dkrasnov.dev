@@ -1,4 +1,10 @@
-import { IconArticle, IconFunction, IconHome, IconSalt, IconUser } from "@tabler/icons-react";
+import {
+  IconArticle,
+  IconFunction,
+  IconHome,
+  IconSalt,
+  IconUser,
+} from "@tabler/icons-react";
 
 const icons = {
   Home: IconHome,
@@ -6,24 +12,21 @@ const icons = {
   Article: IconArticle,
   Fn: IconFunction,
   Salt: IconSalt,
-
-} as const
+} as const;
 
 export type Item = {
   icon?: keyof typeof icons;
   color?: string;
   name: string;
   href: string;
-}
+};
 
 export type Group = {
   name: string;
   items: Array<Item>;
-}
+};
 
-
-export type Suggestion = [name: string, href: string]
-
+export type Suggestion = [name: string, href: string];
 
 const groups: Array<Group> = [
   {
@@ -37,29 +40,30 @@ const groups: Array<Group> = [
       {
         icon: "User",
         name: "About",
-        href: "/about"
+        href: "/about",
       },
       {
         icon: "Article",
         name: "Blog",
-        href: "/blog"
+        href: "/blog",
       },
       {
         icon: "Fn",
         name: "Portfolio",
-        href: "/portfolio"
-      }, {
+        href: "/portfolio",
+      },
+      {
         icon: "Salt",
         name: "Recipes",
-        href: "/recipes"
-      }
+        href: "/recipes",
+      },
     ],
   },
 ];
 
 const suggestions: Array<Suggestion> = [
   ["View portfolio", "/portfolio"],
-  ["Discover recipes", "/recipes"]
-]
+  ["Discover recipes", "/recipes"],
+];
 
-export { icons, groups, suggestions }
+export { icons, groups, suggestions };
