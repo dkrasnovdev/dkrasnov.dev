@@ -1,10 +1,17 @@
 ---
 import Layout from "$layouts/base.astro";
 import PageIntro from "$components/page-intro.svelte";
+import ProjectsList from "$components/projects-list.svelte";
+import ProjectFilter from "$components/projects-filter.svelte";
 ---
 
 <Layout title="Projects" description="Astro.description">
-  <PageIntro heading="Projects" />
+  <PageIntro heading="Projects">
+    <ProjectFilter client:load />
+  </PageIntro>
   <div class="h-20"></div>
-  <section></section>
+  <section>
+    <ProjectsList client:load />
+    <div class="h-10"></div>
+  </section>
 </Layout>

@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Siberiana GraphQL API",
+    "description": "",
+    "tags": [
+      "golang",
+      "graphql"
+    ],
+    "url": "https://api.appctl.ruc",
+    "repository": "https://github.com/dkrasnovdev/siberiana-api"
+  }
+]

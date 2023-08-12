@@ -14,4 +14,9 @@
       <p>{tagline}</p>
     {/if}
   </div>
+  {#if $$slots.default}
+    <div>
+      <slot />
+    </div>
+  {/if}
 </section>
