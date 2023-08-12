@@ -1,5 +1,6 @@
 <script lang="ts">
   import Card from "$components/card.svelte";
+  import getBrandColor from "$utils/get-brand-color";
   import hasMatch from "$utils/has-match";
   import { projects } from "$data/projects";
   import { searchQuery } from "$store";
@@ -16,14 +17,13 @@
         <div
           class="flex flex-wrap items-center justify-center gap-2.5 md:justify-start [&>*]:shrink-0"
         >
-          {#each project.icons as icon}
-            <svelte:component
-              this={icon}
-              stroke={1.5}
-              aria-hidden="true"
-              class="text-neutral-500"
-            />
-          {/each}
+          <svelte:component
+            this={project.icon.svg}
+            stroke={1.5}
+            size={36}
+            aria-hidden="true"
+            class={getBrandColor(project.icon.name)}
+          />
         </div>
         <div class="h-1.5" />
         <p class="font-semibold">{project.name}</p>
