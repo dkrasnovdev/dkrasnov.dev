@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, sharpImageService } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 
@@ -9,6 +9,9 @@ export default defineConfig({
   site: "https://dkrasnov.dev",
   experimental: {
     assets: true,
+  },
+  image: {
+    service: sharpImageService(),
   },
   integrations: [tailwind(), mdx(), svelte()],
 });
