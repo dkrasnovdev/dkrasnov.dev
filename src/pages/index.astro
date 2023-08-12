@@ -5,7 +5,7 @@ import Layout from "$layouts/base.astro";
 
 <Layout title="Astro.title" description="Astro.description">
   <section
-    class="min-h-content grid items-center gap-20 lg:grid-cols-[1fr,minmax(0,1fr)]"
+    class="grid min-h-content items-center gap-20 lg:grid-cols-[1fr,minmax(0,1fr)]"
   >
     <div class="space-y-6 text-center lg:space-y-10 lg:text-left">
       <h1
@@ -32,6 +32,10 @@ import Layout from "$layouts/base.astro";
   <section
     class="mx-auto grid max-w-lg grid-cols-1 gap-10 md:max-w-full md:grid-cols-3 md:gap-5"
   >
+    <Card size="lg" href="/projects" linkText="Read blog">
+      <h2>Blog</h2>
+      <p>I write things</p>
+    </Card>
     <Card size="lg" href="/projects" linkText="View projects">
       <h2>Projects</h2>
       <p>I do things</p>
@@ -39,10 +43,6 @@ import Layout from "$layouts/base.astro";
     <Card size="lg" href="/projects" linkText="Discover snippets">
       <h2>Snippets</h2>
       <p>I share things</p>
-    </Card>
-    <Card size="lg" href="/projects" linkText="Read blog">
-      <h2>Blog</h2>
-      <p>I write things</p>
     </Card>
   </section>
 </Layout>

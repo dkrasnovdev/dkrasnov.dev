@@ -7,6 +7,9 @@ function isCurrent(url: string) {
 const menu = [
   ["home", "/"],
   ["about", "/about"],
+  ["blog", "/blog"],
+  ["projects", "/projects"],
+  ["snippets", "/snippets"],
 ];
 ---
 
@@ -14,6 +17,94 @@ const menu = [
   <div
     class="flex w-full max-w-content items-center justify-between space-x-2.5"
   >
+    <div class="md:hidden"></div>
+    <nav aria-label="navigation" class="block md:hidden">
+      <ul role="list" class="flex items-center gap-3">
+        <li>
+          <details class="group relative">
+            <summary
+              class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-md transition focus:outline-none focus:ring focus:ring-inset"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="hidden group-open:inline-flex"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M18 6l-12 12"></path>
+                <path d="M6 6l12 12"></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="inline-flex group-open:hidden"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M4 8l16 0"></path>
+                <path d="M4 16l16 0"></path>
+              </svg>
+            </summary>
+
+            <div
+              class="absolute right-0 top-10 z-20 w-64 rounded-xl border-2 border-neutral-800 p-3"
+            >
+              <ul role="list" class="flex flex-col gap-3">
+                {
+                  menu.map(([name, href]) => (
+                    <li>
+                      <a
+                        href={href}
+                        aria-current={isCurrent(href) ? "page" : undefined}
+                        class={clsx(
+                          "flex justify-between rounded-md p-2.5 font-semibold transition hover:bg-neutral-800 hover:text-neutral-200 focus:outline-none focus:ring focus:ring-inset [&:hover>svg]:text-neutral-200",
+                          {
+                            "text-neutral-500": !isCurrent(href),
+                          },
+                        )}
+                      >
+                        <span>{name}</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class={clsx("transition", {
+                            "text-neutral-500": !isCurrent(href),
+                          })}
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          stroke-width="2"
+                          stroke="currentColor"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <path d="M9 6l6 6l-6 6" />
+                        </svg>
+                      </a>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </details>
+        </li>
+      </ul>
+    </nav>
+
     <nav aria-label="navigation" class="hidden md:flex">
       <ul role="list" class="flex items-center gap-2.5">
         {
