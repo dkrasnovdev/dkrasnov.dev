@@ -1,7 +1,7 @@
 <script lang="ts">
   import { IconSearch } from "$components/icons";
   import Key from "$components/key.svelte";
-  import { queryProject } from "$store";
+  import { searchQuery } from "$store";
 
   export let label: string;
 
@@ -38,7 +38,7 @@
     id="search"
     type="text"
     bind:this={element}
-    bind:value={$queryProject}
+    bind:value={$searchQuery}
     placeholder={label}
     class="bg-black"
   />

@@ -1,10 +1,10 @@
 <script lang="ts">
   import hasMatch from "$utils/has-match";
   import { projects } from "$data/projects";
-  import { queryProject } from "$store";
+  import { searchQuery } from "$store";
 
   $: filteredProjects = projects.filter((project) =>
-    hasMatch(project, $queryProject, ["name", "tags"]),
+    hasMatch(project, $searchQuery, ["name", "tags"]),
   );
 </script>
 

@@ -1,5 +1,5 @@
 import { atom } from 'nanostores'
 
-const queryProject = atom<string>("")
+const searchQuery = atom<string>("")
 
-export { queryProject }
+export { searchQuery }

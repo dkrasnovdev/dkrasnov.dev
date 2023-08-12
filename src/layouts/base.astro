@@ -1,6 +1,7 @@
 ---
 import "$style/global.css";
 import Header from "$components/header.astro";
+import Footer from "$components/footer.svelte";
 export type Props = {
   title: string;
   description: string;
@@ -23,5 +24,6 @@ const { title, description } = Astro.props;
     <main id="content" class="mx-auto max-w-2xl p-5">
       <slot />
     </main>
+    <Footer />
   </body>
 </html>
