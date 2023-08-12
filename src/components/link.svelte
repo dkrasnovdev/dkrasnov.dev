@@ -10,7 +10,7 @@
 <svelte:element
   this={element}
   {href}
-  class=""
+  class="inline font-medium text-neutral-300 underline-offset-2 transition after:inline-block after:whitespace-pre hover:underline"
   class:internal-link={decorations && !isExternal}
   class:external-link={decorations && isExternal}><slot /></svelte:element
 >

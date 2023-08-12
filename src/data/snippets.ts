@@ -1,12 +1,12 @@
 import jsonSnippets from '$data/snippets.json'
-import getIcons from '$utils/get-icons';
+import getIcon from '$utils/get-icon';
 
 const snippets = [
   ...jsonSnippets.map((snippet) => {
     return {
       name: snippet.name,
       description: snippet.description,
-      icons: getIcons(snippet.tags),
+      icon: getIcon(snippet.tags),
       tags: snippet.tags,
     }
   })

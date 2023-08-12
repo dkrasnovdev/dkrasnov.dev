@@ -21,8 +21,7 @@
 
   {#if linkText}
     <div class="flex-1" />
-
-    <div class="pt-1.5 font-semibold text-neutral-500">
+    <div class="pt-1.5 font-semibold">
       <Link nested {href}>{linkText}</Link>
     </div>
   {/if}
