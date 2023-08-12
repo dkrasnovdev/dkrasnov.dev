@@ -2,10 +2,6 @@
   {
     "name": "Docker PostgreSQL",
     "description": "",
-    "tags": [
-      "docker",
-      "docker-compose",
-      "postgres"
-    ]
+    "tags": ["docker", "docker-compose", "postgres"]
   }
 ]

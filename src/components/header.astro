@@ -10,7 +10,7 @@ const menu = [
   ["about", "/about"],
   ["blog", "/blog"],
   ["portfolio", "/portfolio"],
-  ["snippets", "/snippets"],
+  ["recipes", "/recipes"],
 ];
 ---
 
@@ -66,7 +66,7 @@ const menu = [
             </summary>
 
             <div
-              class="absolute right-0 top-10 z-50 w-64 rounded-xl border-2 border-neutral-800 bg-neutral-900 p-3"
+              class="absolute right-0 top-10 z-50 w-64 rounded-xl border-2 bg-neutral-900 p-3"
             >
               <ul role="list" class="flex flex-col gap-3">
                 {
@@ -104,7 +104,7 @@ const menu = [
                     </li>
                   ))
                 }
-                <li class="border-b border-neutral-800"></li>
+                <li class="border-b"></li>
                 <CommandMenuTrigger size="lg" client:load>
                   Search
                 </CommandMenuTrigger>
@@ -140,7 +140,7 @@ const menu = [
             </li>
           ))
         }
-        <li class="h-6 border-r-2 border-neutral-800" aria-hidden="true"></li>
+        <li class="h-6 border-r-2" aria-hidden="true"></li>
         <li>
           <CommandMenuTrigger client:load size="sm">Search</CommandMenuTrigger>
         </li>

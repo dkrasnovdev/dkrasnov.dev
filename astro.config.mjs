@@ -9,10 +9,10 @@ import react from "@astrojs/react";
 export default defineConfig({
   site: "https://dkrasnov.dev",
   experimental: {
-    assets: true
+    assets: true,
   },
   image: {
-    service: sharpImageService()
+    service: sharpImageService(),
   },
-  integrations: [tailwind(), mdx(), svelte(), react()]
+  integrations: [tailwind(), mdx(), svelte(), react()],
 });

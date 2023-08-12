@@ -2,10 +2,7 @@
   {
     "name": "Siberiana GraphQL API",
     "description": "",
-    "tags": [
-      "golang",
-      "graphql"
-    ],
+    "tags": ["golang", "graphql"],
     "url": "https://api.appctl.ru",
     "repository": "https://github.com/dkrasnovdev/siberiana-api"
   }

@@ -16,6 +16,12 @@ module.exports = {
       minHeight: {
         content: "var(--content-height)",
       },
+      borderColor: {
+        DEFAULT: "#262626"
+      },
+      ringColor: {
+        DEFAULT: "#fafafa"
+      }
     },
   },
   plugins: [],

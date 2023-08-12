@@ -1,5 +1,5 @@
-import jobportfolio from '$data/prof-portfolio.json'
-import getIcon from '$utils/get-icon';
+import jobportfolio from "$data/prof-portfolio.json";
+import getIcon from "$utils/get-icon";
 
 const portfolio = [
   ...jobportfolio.map((portfolio) => {
@@ -9,8 +9,8 @@ const portfolio = [
       tags: portfolio.tags,
       url: portfolio.url,
       repository: portfolio.repository,
-    }
-  })
-]
+    };
+  }),
+];
 
 export { portfolio };

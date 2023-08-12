@@ -7,7 +7,7 @@
 </script>
 
 <footer
-  class="item-center flex h-footer-height justify-center border-t border-neutral-800 px-page-gutter"
+  class="item-center flex h-footer-height justify-center border-t px-page-gutter"
 >
   <div
     class="flex w-full max-w-content flex-col-reverse items-center justify-center gap-3 sm:flex-row sm:justify-between sm:gap-0"

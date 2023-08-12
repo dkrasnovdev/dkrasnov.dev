@@ -12,7 +12,7 @@
   {id}
   {href}
   target="_blank"
-  class="flex h-full w-full flex-col border-2 border-neutral-800 bg-neutral-900 transition target:ring focus:outline-none focus:ring"
+  class="flex h-full w-full flex-col border-2 bg-neutral-900 transition target:ring focus:outline-none focus:ring"
   class:hoverable={href}
   class:size-sm={size === "sm"}
   class:size-lg={size === "lg"}

@@ -1,5 +1,6 @@
-import { atom } from 'nanostores'
+import { atom } from "nanostores";
 
-const searchQuery = atom<string>("")
+const searchQuery = atom<string>("");
+const commandIsOpen = atom(false);
 
-export { searchQuery }
+export { commandIsOpen, searchQuery };

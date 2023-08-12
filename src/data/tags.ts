@@ -1,7 +1,3 @@
-const tags = [
-  "Next.JS",
-  "Go",
-  "GraphQL"
-]
+const tags = ["Next.JS", "Go", "GraphQL"];
 
 export { tags };

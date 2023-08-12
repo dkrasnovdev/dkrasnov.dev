@@ -27,7 +27,7 @@
 <svelte:window on:keydown={handleKeydown} />
 
 <div
-  class="relative flex h-12 w-full items-center space-x-3 overflow-hidden rounded-full border-2 border-neutral-800 bg-neutral-900 px-3 transition focus-within:ring"
+  class="relative flex h-12 w-full items-center space-x-3 overflow-hidden rounded-full border-2 bg-neutral-900 px-3 transition focus-within:ring"
 >
   <label for="search">
     <span class="sr-only">{label}</span>
