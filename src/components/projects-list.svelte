@@ -8,7 +8,7 @@
   );
 </script>
 
-<ul class="grid grid-cols-2 gap-5">
+<ul role="list" class="grid grid-cols-2 gap-5">
   {#each filteredProjects as project}
     <li>
       {#each project.icons as icon}
