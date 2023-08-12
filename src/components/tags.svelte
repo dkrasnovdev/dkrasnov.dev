@@ -12,7 +12,7 @@
       on:click={() => searchQuery.set("")}
       class="flex h-7 items-center rounded-full p-5 font-semibold capitalize text-neutral-500 transition focus:outline-none focus:ring"
     >
-      All projects
+      All portfolio
     </button>
   </li>
 

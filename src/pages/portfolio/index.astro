@@ -1,19 +1,19 @@
 ---
 import Layout from "$layouts/base.astro";
 import PageIntro from "$components/page-intro.svelte";
-import ProjectsList from "$components/projects-list.svelte";
+import PortfolioList from "$components/portfolio-list.svelte";
 import Filter from "$components/filter.svelte";
 import Tags from "$components/tags.svelte";
 ---
 
-<Layout title="projects | dmitrykrasnov" description="Astro.description">
-  <PageIntro heading="Projects">
-    <Filter client:load label="Search projects..." />
+<Layout title="portfolio | dmitrykrasnov" description="Astro.description">
+  <PageIntro heading="Portfolio">
+    <Filter client:load label="Search portfolio..." />
   </PageIntro>
   <div class="h-20"></div>
   <section>
     <Tags client:load />
     <div class="h-10"></div>
-    <ProjectsList client:load />
+    <PortfolioList client:load />
   </section>
 </Layout>

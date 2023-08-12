@@ -1,17 +1,17 @@
 <script lang="ts">
   import hasMatch from "$utils/has-match";
-  import { projects } from "$data/projects";
+  import { portfolio } from "$data/portfolio";
   import { searchQuery } from "$store";
 
-  $: filteredProjects = projects.filter((project) =>
-    hasMatch(project, $searchQuery, ["name", "tags"]),
+  $: filteredportfolio = portfolio.filter((portfolio) =>
+    hasMatch(portfolio, $searchQuery, ["name", "tags"]),
   );
 </script>
 
 <ul class="grid grid-cols-2 gap-5">
-  {#each filteredProjects as project}
+  {#each filteredportfolio as portfolio}
     <li>
-      {#each project.icons as icon}
+      {#each portfolio.icons as icon}
         <svelte:component
           this={icon}
           stroke={1.5}
