@@ -1,4 +1,5 @@
 <script lang="ts">
+  export let showAll: string = "All";
   import { tags } from "$data/tags";
   import { searchQuery } from "$store";
 </script>
@@ -12,7 +13,7 @@
       on:click={() => searchQuery.set("")}
       class="flex h-7 items-center rounded-full p-5 font-semibold capitalize text-neutral-500 transition focus:outline-none focus:ring"
     >
-      All portfolio
+      {showAll}
     </button>
   </li>
 
