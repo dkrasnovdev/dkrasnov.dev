@@ -1,9 +1,10 @@
 ---
 import Card from "$components/card.svelte";
+import ImageGrid from "$components/image-grid.astro";
 import Layout from "$layouts/base.astro";
 ---
 
-<Layout title="Astro.title" description="Astro.description">
+<Layout title="dmitrykrasnov" description="Astro.description">
   <section
     class="grid min-h-content items-center gap-20 lg:grid-cols-[1fr,minmax(0,1fr)]"
   >
@@ -22,11 +23,12 @@ import Layout from "$layouts/base.astro";
       <div>
         <a
           href="/about"
-          class="inline-flex h-12 items-center rounded-full border-2 border-neutral-800 bg-neutral-900 px-6 font-medium transition hover:bg-neutral-800 focus:outline-none focus:ring"
+          class="inline-flex h-12 items-center rounded-full border-2 border-neutral-800 bg-neutral-900 px-6 font-semibold transition hover:bg-neutral-800 focus:outline-none focus:ring"
           >About me&nbsp;&rarr;</a
         >
       </div>
     </div>
+    <div class="-order-1 overflow-hidden lg:order-1"><ImageGrid /></div>
   </section>
   <div class="h-20"></div>
   <section

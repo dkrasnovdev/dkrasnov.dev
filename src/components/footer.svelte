@@ -12,7 +12,7 @@
   <div
     class="flex w-full max-w-content flex-col-reverse items-center justify-between gap-3 sm:flex-row sm:gap-0"
   >
-    <p class="font-semibold text-neutral-500">dkrasnov.dev</p>
+    <p class="font-semibold text-neutral-500">dmitrykrasnov.</p>
     <nav aria-label="Socials">
       <ul role="list" class="flex items-center">
         {#each menu as [name, href]}
