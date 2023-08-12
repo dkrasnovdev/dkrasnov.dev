@@ -1,5 +1,6 @@
 ---
 import "$style/global.css";
+import Banner from "$components/banner.svelte";
 import Header from "$components/header.astro";
 import Footer from "$components/footer.svelte";
 export type Props = {
@@ -20,9 +21,10 @@ const { title, description } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
+    <Banner />
     <Header />
-    <main id="content" class="px-page-gutter py-page-top flex justify-center">
-      <div class="min-h-content max-w-content w-full">
+    <main id="content" class="flex justify-center px-page-gutter py-page-top">
+      <div class="min-h-content w-full max-w-content">
         <slot />
       </div>
     </main>
