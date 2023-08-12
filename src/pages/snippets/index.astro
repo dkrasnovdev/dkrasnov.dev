@@ -1,19 +1,17 @@
 ---
 import Layout from "$layouts/base.astro";
 import PageIntro from "$components/page-intro.svelte";
-import ProjectsList from "$components/projects-list.svelte";
+import SnippetsList from "$components/snippets-list.svelte";
 import Filter from "$components/filter.svelte";
-import Tags from "$components/tags.svelte";
 ---
 
-<Layout title="Projects" description="Astro.description">
-  <PageIntro heading="Projects">
+<Layout title="Snippets" description="Astro.description">
+  <PageIntro heading="Snippets">
     <Filter client:load label="Search projects..." />
   </PageIntro>
   <div class="h-20"></div>
   <section>
-    <Tags client:load />
+    <SnippetsList client:load />
     <div class="h-10"></div>
-    <ProjectsList client:load />
   </section>
 </Layout>

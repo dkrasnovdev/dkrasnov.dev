@@ -1,5 +1,48 @@
 ---
+import Card from "$components/card.svelte";
 import Layout from "$layouts/base.astro";
 ---
 
-<Layout title="Astro.title" description="Astro.description" />
+<Layout title="Astro.title" description="Astro.description">
+  <section
+    class="min-h-content grid items-center gap-20 lg:grid-cols-[1fr,minmax(0,1fr)]"
+  >
+    <div class="space-y-6 text-center lg:space-y-10 lg:text-left">
+      <h1
+        class="text-5xl font-bold tracking-tight text-neutral-100 lg:text-8xl"
+      >
+        dmitry krasnov
+      </h1><p class="text-neutral-300">
+        I’m a polyglot programmer, self-starter and coding enthusiast. I use
+        TypeScript and Go professionally to build robust solutions that deliver
+        seamless user experiences. I look forward to contributing my skills and
+        expertise to impactful projects. Welcome, and I hope you enjoy your
+        stay!
+      </p>
+      <div>
+        <a
+          href="/about"
+          class="inline-flex h-12 items-center rounded-full border-2 border-neutral-800 bg-neutral-900 px-6 font-medium transition hover:bg-neutral-800 focus:outline-none focus:ring"
+          >About me&nbsp;&rarr;</a
+        >
+      </div>
+    </div>
+  </section>
+  <div class="h-20"></div>
+  <section
+    class="mx-auto grid max-w-lg grid-cols-1 gap-10 md:max-w-full md:grid-cols-3 md:gap-5"
+  >
+    <Card size="lg" href="/projects" linkText="View projects">
+      <h2>Projects</h2>
+      <p>I do things</p>
+    </Card>
+    <Card size="lg" href="/projects" linkText="Discover snippets">
+      <h2>Snippets</h2>
+      <p>I share things</p>
+    </Card>
+    <Card size="lg" href="/projects" linkText="Read blog">
+      <h2>Blog</h2>
+      <p>I write things</p>
+    </Card>
+  </section>
+</Layout>

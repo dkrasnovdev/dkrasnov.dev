@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Docker PostgreSQL",
+    "description": "",
+    "tags": [
+      "docker",
+      "docker-compose",
+      "postgres"
+    ]
+  }
+]

@@ -11,7 +11,7 @@
   this={href ? "a" : "div"}
   {id}
   {href}
-  class=""
+  class="flex h-full w-full flex-col border-2 border-neutral-800 bg-neutral-900 transition target:ring focus:outline-none focus:ring"
   class:hoverable={href}
   class:size-sm={size === "sm"}
   class:size-lg={size === "lg"}
@@ -35,6 +35,6 @@
     @apply rounded-3xl p-6 lg:p-10;
   }
   .hoverable:hover {
-    @apply bg-muted/10;
+    @apply bg-neutral-800;
   }
 </style>

@@ -5,6 +5,18 @@
 
 @layer base {
   body {
-    @apply bg-primary-dark text-white antialiased;
+    @apply bg-neutral-950 text-white antialiased;
   }
+}
+
+:root {
+  --page-top: 48px;
+	--page-gutter: 24px;
+	--banner-height: 40px;
+	--header-height: 72px;
+	--footer-height: 96px;
+	--content-width: 72rem;
+	--content-height: calc(
+		100vh - var(--banner-height) - var(--header-height) - (var(--page-top) * 2)
+	);
 }

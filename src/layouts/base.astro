@@ -21,8 +21,10 @@ const { title, description } = Astro.props;
   </head>
   <body>
     <Header />
-    <main id="content" class="mx-auto max-w-2xl p-5">
-      <slot />
+    <main id="content" class="px-page-gutter py-page-top flex justify-center">
+      <div class="min-h-content max-w-content w-full">
+        <slot />
+      </div>
     </main>
     <Footer />
   </body>

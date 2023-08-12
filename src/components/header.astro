@@ -6,18 +6,23 @@ function isCurrent(url: string) {
 const menu = ["snippets", "projects"];
 ---
 
-<header>
-  <a href="/" aria-current={isCurrent("/") ? "page" : undefined}>dkrasnov.dev</a
+<header class="h-header-height px-page-gutter flex justify-center">
+  <div
+    class="max-w-content flex w-full items-center justify-between space-x-2.5"
   >
-  <nav aria-label="navigation" class="flex">
-    <ul role="list" class="flex items-center gap-2">
-      {
-        menu.map((page) => (
-          <li>
-            <a href={`/${page}`}>{page}</a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
+    <a href="/" aria-current={isCurrent("/") ? "page" : undefined}
+      >dkrasnov.dev</a
+    >
+    <nav aria-label="navigation" class="flex">
+      <ul role="list" class="flex items-center gap-2">
+        {
+          menu.map((page) => (
+            <li>
+              <a href={`/${page}`}>{page}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+  </div>
 </header>

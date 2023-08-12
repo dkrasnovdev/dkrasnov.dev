@@ -1,18 +1,27 @@
 <script lang="ts">
-  const menu = [["GitHub", "https://github.com/dkrasnovdev"]];
+  const menu = [
+    ["GitHub", "https://github.com/dkrasnovdev"],
+    ["Telegram", "https://t.me/dkrasnovdev"],
+  ];
 </script>
 
-<footer class="">
-  <div class="">
+<footer
+  class="item-center flex h-footer-height justify-center border-t-2 border-neutral-800 px-page-gutter"
+>
+  <div
+    class="flex w-full max-w-content flex-col-reverse items-center justify-between gap-3 sm:flex-row sm:gap-0"
+  >
     <p class="">
-      Copyright &copy; {new Date().getFullYear()} dmitrykrasnov
+      Copyright &copy; {new Date().getFullYear()} dkrasnov.dev
     </p>
-
-    <nav aria-label="Media">
-      <ul role="list" class="">
+    <nav aria-label="Socials">
+      <ul role="list" class="flex items-center">
         {#each menu as [name, href]}
           <li>
-            <a {href} class="">
+            <a
+              {href}
+              class="rounded-md px-2.5 py-1.5 text-sm font-medium transition focus:outline-none focus:ring focus:ring-inset"
+            >
               {name}
             </a>
           </li>
