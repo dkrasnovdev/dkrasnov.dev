@@ -5,8 +5,8 @@ import {
 
 export default function getIcons(tags: string[]) {
   const icons = []
-  if (tags.includes("graphql")) icons.push(IconGraphQL)
   if (tags.includes("golang")) icons.push(IconGolang)
+  if (tags.includes("graphql")) icons.push(IconGraphQL)
   return icons
 
 }

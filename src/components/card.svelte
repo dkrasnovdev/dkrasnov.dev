@@ -11,6 +11,7 @@
   this={href ? "a" : "div"}
   {id}
   {href}
+  target="_blank"
   class="flex h-full w-full flex-col border-2 border-neutral-800 bg-neutral-900 transition target:ring focus:outline-none focus:ring"
   class:hoverable={href}
   class:size-sm={size === "sm"}
@@ -21,7 +22,7 @@
   {#if linkText}
     <div class="flex-1" />
 
-    <div class="pt-1.5">
+    <div class="pt-1.5 font-semibold text-neutral-500">
       <Link nested {href}>{linkText}</Link>
     </div>
   {/if}

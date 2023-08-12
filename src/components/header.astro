@@ -106,7 +106,7 @@ const menu = [
     </nav>
 
     <nav aria-label="navigation" class="hidden md:flex">
-      <ul role="list" class="flex items-center gap-2.5">
+      <ul role="list" class="-ml-5 flex items-center gap-5">
         {
           menu.map(([name, href]) => (
             <li>
@@ -114,13 +114,18 @@ const menu = [
                 href={href}
                 aria-current={isCurrent(href) ? "page" : undefined}
                 class={clsx(
-                  "rounded-md p-2.5 font-semibold transition hover:bg-neutral-900 hover:text-neutral-200 focus:outline-none focus:ring focus:ring-inset",
+                  "rounded-full font-semibold transition hover:text-neutral-200 focus:text-neutral-100 focus:outline-none",
                   {
                     "text-neutral-500": !isCurrent(href),
                   },
                 )}
               >
-                {name}
+                <span class="relative px-2 py-1">
+                  {name}
+                  {isCurrent(href) && (
+                    <div class="absolute inset-0 top-7 z-[-1] h-0.5 bg-neutral-800 bg-gradient-to-r from-transparent to-neutral-900" />
+                  )}
+                </span>
               </a>
             </li>
           ))

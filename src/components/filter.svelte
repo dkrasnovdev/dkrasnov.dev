@@ -32,7 +32,7 @@
   <label for="search">
     <span class="sr-only">{label}</span>
     <span>
-      <IconSearch size={20} aria-hidden="true" />
+      <IconSearch size={20} aria-hidden="true" class="stroke-neutral-500 " />
     </span>
   </label>
 
