@@ -4,9 +4,9 @@
   export let tagline: Optional<string> = undefined;
 </script>
 
-<section>
-  <div>
-    <h1>{heading}</h1>
+<section class="flex flex-col items-center justify-between gap-5 md:flex-row">
+  <div class="shrink-0 text-center md:text-left">
+    <h1 class="text-xl font-bold tracking-tight">{heading}</h1>
     {#if subheading}
       <p>{subheading}</p>
     {/if}
