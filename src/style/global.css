@@ -23,6 +23,18 @@
   --content-height: calc(
     100vh - var(--banner-height) - var(--header-height) - (var(--page-top) * 2)
   );
+
+  --astro-code-color-text: hsla(0,0%,93%,1);
+  --astro-code-color-background: transparent;
+  --astro-code-token-constant: hsla(0,0%,93%,1);
+  --astro-code-token-string: hsla(131,43%,57%,1);
+  --astro-code-token-comment: hsla(0,0%,63%,1);
+  --astro-code-token-keyword: hsla(341,90%,67%,1);
+  --astro-code-token-parameter: hsla(35,100%,52%,1);
+  --astro-code-token-function: hsla(210,100%,66%,1);
+  --astro-code-token-string-expression: hsla(131,43%,57%,1);
+  --astro-code-token-punctuation: hsla(0,0%,93%,1);
+  --astro-code-token-link: hsla(131,43%,57%,1);
 }
 
 details summary::-webkit-details-marker {

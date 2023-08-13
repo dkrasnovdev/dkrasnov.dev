@@ -1,4 +1,5 @@
 <script lang="ts">
+  export let filename: string;
   import { IconBrandGit, IconTypeScript } from "$components/icons";
 </script>
 
@@ -10,9 +11,9 @@
     class="absolute top-0 flex h-12 w-full items-center space-x-2 rounded-t-3xl border-b bg-neutral-900 px-4"
   >
     <IconTypeScript size={12} class="text-neutral-500"></IconTypeScript>
-    <span class="font-mono text-xs text-neutral-500">pages/index.tsx</span>
+    <span class="font-mono text-xs text-neutral-500">{filename}</span>
   </div>
-  <div class="w-full px-4 py-16">
+  <div class="w-full overflow-y-auto px-4 py-16 focus:outline-none">
     <slot />
   </div>
   <div

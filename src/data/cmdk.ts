@@ -3,6 +3,7 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandTelegram,
+  IconFileCv,
   IconFunction,
   IconHome,
   IconSalt,
@@ -18,6 +19,7 @@ const icons = {
   BrandGitHub: IconBrandGithub,
   BrandLinkedIn: IconBrandLinkedin,
   BrandTelegram: IconBrandTelegram,
+  FileCv: IconFileCv,
 } as const;
 
 export type Item = {
@@ -85,6 +87,21 @@ const groups: Array<Group> = [
       },
     ],
   },
+  {
+    name: "Resume",
+    items: [
+      {
+        icon: "FileCv",
+        name: "Resume (Light)",
+        href: "/dkrasnov-cv-light.pdf"
+      },
+      {
+        icon: "FileCv",
+        name: "Resume (Dark)",
+        href: "/dkrasnov-cv-dark.pdf"
+      }
+    ]
+  }
 ];
 
 const suggestions: Array<Suggestion> = [

@@ -1,8 +1,7 @@
 ---
 import Card from "$components/card.svelte";
-// import ImageGrid from "$components/image-grid.astro";
 import Ide from "$components/ide.svelte";
-import HelloWorld from "$components/hello-world.md";
+import TypeScript from "$components/typescript.md";
 import Layout from "$layouts/base.astro";
 ---
 
@@ -17,8 +16,11 @@ import Layout from "$layouts/base.astro";
         dmitry krasnov
       </h1><p class="text-neutral-300">
         I’m a polyglot programmer, self-starter and coding enthusiast. I use
-        TypeScript and Go professionally to build solutions that deliver
-        seamless user experiences.
+        <span class="font-bold text-neutral-200">TypeScript</span> and <span
+          class="font-bold text-neutral-200">Go</span
+        >
+         professionally to build solutions that deliver seamless user
+        experiences.
       </p>
       <div>
         <a
@@ -28,9 +30,8 @@ import Layout from "$layouts/base.astro";
         >
       </div>
     </div>
-    <!-- <div class="overflow-hidden"><ImageGrid /></div> -->
     <div class="overflow-hidden">
-      <Ide><HelloWorld /></Ide>
+      <Ide filename="the-best-programming-langugage.ts"><TypeScript /></Ide>
     </div>
   </section>
   <div class="h-20"></div>
