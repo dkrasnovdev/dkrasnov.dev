@@ -11,7 +11,7 @@
   this={href ? "a" : "div"}
   {id}
   {href}
-  target="_blank"
+  target={href?.startsWith("http") ? "_blank" : "_self"}
   class="flex h-full w-full flex-col border-2 bg-neutral-900 transition target:ring focus:outline-none focus:ring"
   class:hoverable={href}
   class:size-sm={size === "sm"}

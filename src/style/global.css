@@ -12,6 +12,7 @@
   }
 }
 
+
 :root {
   color-scheme: dark;
   --page-top: 48px;
@@ -35,6 +36,62 @@
   --astro-code-token-string-expression: hsla(131,43%,57%,1);
   --astro-code-token-punctuation: hsla(0,0%,93%,1);
   --astro-code-token-link: hsla(131,43%,57%,1);
+}
+
+[id] {
+	scroll-margin-top: var(--page-top);
+}
+
+article {
+	@apply max-w-prose;
+}
+article > *:not(:first-child) {
+	@apply mt-7;
+}
+
+article h2 {
+	@apply text-lg font-semibold tracking-tight;
+}
+
+article h3 {
+	@apply font-semibold tracking-tight;
+}
+article h2:not(:first-child),
+article h3,
+article h4,
+article h5 {
+	@apply mt-14;
+}
+article a {
+	@apply inline font-medium text-neutral-200 underline-offset-2 after:inline-block after:whitespace-pre hover:underline;
+}
+article a[href^="http"] {
+	@apply after:content-['_↗'];
+}
+article a:hover {
+	@apply underline;
+}
+article blockquote {
+	@apply border-l-2 pl-3 text-neutral-500;
+}
+article ul,
+article ol {
+	@apply pl-6 leading-loose;
+}
+article ul {
+	@apply list-disc;
+}
+article ol {
+	@apply list-decimal;
+}
+article li > pre {
+	@apply mb-1.5;
+}
+article pre {
+	@apply rounded-xl p-4;
+}
+article code {
+	@apply rounded bg-transparent p-1 font-mono text-sm font-medium;
 }
 
 details summary::-webkit-details-marker {

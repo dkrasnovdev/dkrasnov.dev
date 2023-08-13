@@ -1,11 +1,17 @@
-const tags = [
+const projects = [
   "TypeScript",
   "Go",
-  "Next.JS",
-  "GraphQL",
   "React",
   "Svelte",
-  "Zod",
+  "Astro",
+  "Next.JS",
+  "GraphQL",
 ];
 
-export { tags };
+const recipes = [
+  "Docker",
+  "Zustand",
+  "Zod"
+]
+
+export { recipes, projects };

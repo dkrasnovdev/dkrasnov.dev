@@ -8,7 +8,7 @@
   <div class="shrink-0 text-center md:text-left">
     <h1 class="text-xl font-bold tracking-tight">{heading}</h1>
     {#if subheading}
-      <p>{subheading}</p>
+      <p class="font-serif italic">{subheading}</p>
     {/if}
     {#if tagline}
       <p>{tagline}</p>

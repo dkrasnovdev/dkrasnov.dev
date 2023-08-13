@@ -1,6 +1,6 @@
 <script lang="ts">
   export let showAll: string = "All";
-  import { tags } from "$data/tags";
+  export let tags: string[];
   import { searchQuery } from "$store";
 </script>
 

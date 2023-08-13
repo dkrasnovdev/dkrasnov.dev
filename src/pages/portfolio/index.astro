@@ -4,15 +4,16 @@ import PageIntro from "$components/page-intro.svelte";
 import ProjectsList from "$components/projects-list.svelte";
 import Filter from "$components/filter.svelte";
 import Tags from "$components/tags.svelte";
+import { projects } from "$data/tags";
 ---
 
 <Layout title="portfolio | dmitrykrasnov" description="Astro.description">
-  <PageIntro heading="Portfolio">
+  <PageIntro heading="Portfolio" subheading="Showcasing Software Projects">
     <Filter client:load label="Search portfolio..." />
   </PageIntro>
   <div class="h-20"></div>
   <section>
-    <Tags client:load />
+    <Tags tags={projects} client:load />
     <div class="h-10"></div>
     <ProjectsList client:load />
   </section>

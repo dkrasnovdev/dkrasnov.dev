@@ -1,9 +1,22 @@
 [
   {
+    "name": "dkrasnov.dev",
+    "description": "Personal website",
+    "tags": [
+      "typescript",
+      "astro",
+      "svelte",
+      "react"
+    ],
+    "repository": "https://github.com/dkrasnovdev/dkrasnov.dev"
+  },
+  {
     "name": "Siberiana GraphQL API",
-    "description": "hello",
-    "tags": ["golang", "graphql"],
-    "url": "https://api.appctl.ru",
+    "description": "Cultural Heritage Aggregator",
+    "tags": [
+      "golang",
+      "graphql"
+    ],
     "repository": "https://github.com/dkrasnovdev/siberiana-api"
   }
 ]

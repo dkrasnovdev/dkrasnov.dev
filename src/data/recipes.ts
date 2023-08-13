@@ -1,15 +1,16 @@
-import jsonSnippets from "$data/snippets.json";
+import r from "$data/recipes.json";
 import getIcon from "$utils/get-icon";
 
-const snippets = [
-  ...jsonSnippets.map((snippet) => {
+const recipes = [
+  ...r.map((recipe) => {
     return {
-      name: snippet.name,
-      description: snippet.description,
-      icon: getIcon(snippet.tags),
-      tags: snippet.tags,
+      name: recipe.name,
+      description: recipe.description,
+      icon: getIcon(recipe.tags),
+      tags: recipe.tags,
+      repository: recipe.repository
     };
   }),
 ];
 
-export { snippets };
+export { recipes };

@@ -1,17 +1,20 @@
 ---
 import Layout from "$layouts/base.astro";
 import PageIntro from "$components/page-intro.svelte";
-import SnippetsList from "$components/snippets-list.svelte";
+import RecipesList from "$components/recipes-list.svelte";
 import Filter from "$components/filter.svelte";
+import Tags from "$components/tags.svelte";
+import { recipes } from "$data/tags";
 ---
 
 <Layout title="Recipes" description="Astro.description">
-  <PageIntro heading="Recipes">
+  <PageIntro heading="Recipes" subheading="Coding Shortcuts ">
     <Filter client:load label="Search recipes..." />
   </PageIntro>
   <div class="h-20"></div>
   <section>
-    <SnippetsList client:load />
+    <Tags tags={recipes} client:load />
     <div class="h-10"></div>
+    <RecipesList client:load />
   </section>
 </Layout>

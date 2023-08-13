@@ -1,5 +1,21 @@
 ---
 import Layout from "$layouts/base.astro";
+import AboutMe from "$components/about.md";
+import ImageGrid from "$components/image-grid.astro";
+import PageIntro from "$components/page-intro.svelte";
 ---
 
-<Layout title="about me | dmitrykrasnov" description="Astro.description" />
+<Layout title="about me | dmitrykrasnov" description="Astro.description">
+  <PageIntro heading="Whomst?" subheading="The one and only" />
+  <div class="h-20"></div>
+  <section
+    class="grid min-h-content items-start gap-20 lg:grid-cols-[1fr,minmax(0,1fr)]"
+  >
+    <div class="my-8 space-y-6 lg:space-y-10">
+      <article><AboutMe /></article>
+    </div>
+    <div class="overflow-hidden">
+      <ImageGrid />
+    </div>
+  </section>
+</Layout>

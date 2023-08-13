@@ -8,7 +8,6 @@ const projects = [
       description: project.description,
       icon: getIcon(project.tags),
       tags: project.tags,
-      url: project.url,
       repository: project.repository,
     };
   }),
