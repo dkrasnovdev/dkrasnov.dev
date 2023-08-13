@@ -1,7 +1,7 @@
 ---
 import Layout from "$layouts/base.astro";
 import PageIntro from "$components/page-intro.svelte";
-import PortfolioList from "$components/portfolio-list.svelte";
+import ProjectsList from "$components/projects-list.svelte";
 import Filter from "$components/filter.svelte";
 import Tags from "$components/tags.svelte";
 ---
@@ -14,6 +14,6 @@ import Tags from "$components/tags.svelte";
   <section>
     <Tags client:load />
     <div class="h-10"></div>
-    <PortfolioList client:load />
+    <ProjectsList client:load />
   </section>
 </Layout>

@@ -8,6 +8,11 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://dkrasnov.dev",
+  markdown: {
+    shikiConfig: {
+      theme: "css-variables",
+    }
+  },
   experimental: {
     assets: true,
   },

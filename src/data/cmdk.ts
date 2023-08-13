@@ -1,5 +1,8 @@
 import {
   IconArticle,
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconBrandTelegram,
   IconFunction,
   IconHome,
   IconSalt,
@@ -12,6 +15,9 @@ const icons = {
   Article: IconArticle,
   Fn: IconFunction,
   Salt: IconSalt,
+  BrandGitHub: IconBrandGithub,
+  BrandLinkedIn: IconBrandLinkedin,
+  BrandTelegram: IconBrandTelegram,
 } as const;
 
 export type Item = {
@@ -56,6 +62,26 @@ const groups: Array<Group> = [
         icon: "Salt",
         name: "Recipes",
         href: "/recipes",
+      },
+    ],
+  },
+  {
+    name: "Socials",
+    items: [
+      {
+        icon: "BrandGitHub",
+        name: "GitHub",
+        href: "https://github.com/dkrasnovdev",
+      },
+      {
+        icon: "BrandTelegram",
+        name: "Telegram",
+        href: "https://t.me/dkrasnovdev",
+      },
+      {
+        icon: "BrandLinkedIn",
+        name: "LinkedIn",
+        href: "https://linkedin.com/dkrasnovdev",
       },
     ],
   },

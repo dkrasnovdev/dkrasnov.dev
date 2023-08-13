@@ -1,8 +1,8 @@
 const tags = [
-  "Next.JS",
-  "Go",
-  "GraphQL",
   "TypeScript",
+  "Go",
+  "Next.JS",
+  "GraphQL",
   "React",
   "Svelte",
   "Zod",
