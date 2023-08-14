@@ -1,7 +1,7 @@
 ---
 title: "Hello, World!"
 description: "It's long overdue."
-date: "09-09-2023"
+date: "08-09-2023"
 ---
 
 ## dmitrykrasnov

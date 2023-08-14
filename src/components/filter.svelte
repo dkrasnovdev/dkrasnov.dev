@@ -43,6 +43,7 @@
     bind:value={$searchQuery}
     placeholder={label}
     class="h-12 w-full bg-transparent py-3 font-medium placeholder:text-neutral-500 focus:outline-none sm:h-10"
+    autocomplete="off"
   />
 
   <div class="absolute right-3">

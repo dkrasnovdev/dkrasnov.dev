@@ -63,7 +63,7 @@ article h5 {
 	@apply mt-14;
 }
 article a {
-	@apply inline font-medium text-neutral-200 underline-offset-2 after:inline-block after:whitespace-pre hover:underline;
+	@apply inline font-medium text-neutral-200 underline-offset-2 after:inline-block after:whitespace-pre hover:underline focus:outline-none focus:underline underline-offset-2;
 }
 article a[href^="http"] {
 	@apply after:content-['_↗'];

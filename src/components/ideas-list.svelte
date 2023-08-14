@@ -14,7 +14,7 @@
   {#each queriedIdeas as idea}
     <li>
       <Card href={`/ideas/${idea.slug}`} linkText="Read">
-        <p>
+        <p class="text-sm">
           {new Date(idea.data.date).toLocaleString("en-NZ", {
             day: "2-digit",
             month: "short",
