@@ -11,6 +11,27 @@
     "repository": "https://github.com/dkrasnovdev/dkrasnov.dev"
   },
   {
+    "name": "ai.sfu-kras.ru",
+    "description": "",
+    "tags": [
+      "next.js",
+      "sanity.io",
+      "react",
+      "typescript"
+    ],
+    "repository": "https://ai.sfu-kras.ru"
+  },
+  {
+    "name": "science.sfu-kras.ru",
+    "description": "",
+    "tags": [
+      "next.js",
+      "react",
+      "typescript"
+    ],
+    "repository": "https://science.sfu-kras.ru"
+  },
+  {
     "name": "Siberiana GraphQL API",
     "description": "Cultural Heritage Aggregator",
     "tags": [

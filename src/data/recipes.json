@@ -12,7 +12,7 @@
   },
   {
     "name": "Strong Password Validation",
-    "description": "Secure registration form using Zod and React-Hook-Form",
+    "description": "Registration form with secure password using Zod and React-Hook-Form",
     "tags": [
       "zod"
     ],

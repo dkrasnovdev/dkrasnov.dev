@@ -1,0 +1,37 @@
+---
+import Layout from "$layouts/base.astro";
+import PageIntro from "$components/page-intro.svelte";
+import { getCollection, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const ideas = await getCollection("ideas");
+  const paths = ideas.map((idea) => {
+    return {
+      params: {
+        slug: idea.slug,
+      },
+      props: { idea },
+    };
+  });
+  return paths;
+}
+
+export type Props = {
+  idea: CollectionEntry<"ideas">;
+};
+
+const { idea } = Astro.props;
+const { Content } = await idea.render();
+---
+
+<Layout title={idea.data.title} description={idea.data.description}>
+  <div class="grid grid-cols-1 gap-20 lg:grid-cols-[auto,1fr]">
+    <div>
+      <PageIntro heading={idea.data.title} subheading={idea.data.description} />
+      <hr class="my-5" />
+    </div>
+    <article>
+      <Content />
+    </article>
+  </div>
+</Layout>

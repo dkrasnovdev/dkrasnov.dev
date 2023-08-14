@@ -1,8 +1,8 @@
 import {
-  IconArticle,
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandTelegram,
+  IconBulb,
   IconFileCv,
   IconFunction,
   IconHome,
@@ -13,7 +13,7 @@ import {
 const icons = {
   Home: IconHome,
   User: IconUser,
-  Article: IconArticle,
+  Bulb: IconBulb,
   Fn: IconFunction,
   Salt: IconSalt,
   BrandGitHub: IconBrandGithub,
@@ -51,9 +51,9 @@ const groups: Array<Group> = [
         href: "/about",
       },
       {
-        icon: "Article",
-        name: "Blog",
-        href: "/blog",
+        icon: "Bulb",
+        name: "Ideas",
+        href: "/ideas",
       },
       {
         icon: "Fn",

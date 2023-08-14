@@ -30,6 +30,7 @@
         </div>
         <div class="h-5" />
         <h2 class="font-semibold text-neutral-300">{recipe.name}</h2>
+        <div class="h-1.5"></div>
         <p class="text-neutral-400">{recipe.description}</p>
         <div class="h-2.5"></div>
       </Card>

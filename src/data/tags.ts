@@ -14,4 +14,9 @@ const recipes = [
   "Zod"
 ]
 
-export { recipes, projects };
+const ideas = [
+  "Notes",
+  "Snippets"
+]
+
+export { recipes, projects, ideas };

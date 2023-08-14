@@ -4,8 +4,8 @@
   import { projects } from "$data/projects";
   import { searchQuery } from "$store";
 
-  $: queriedProjects = projects.filter((projects) =>
-    hasMatch(projects, $searchQuery, ["name", "tags"]),
+  $: queriedProjects = projects.filter((project) =>
+    hasMatch(project, $searchQuery, ["name", "tags"]),
   );
 </script>
 

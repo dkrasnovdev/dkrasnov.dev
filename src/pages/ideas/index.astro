@@ -1,0 +1,23 @@
+---
+import { getCollection } from "astro:content";
+import Filter from "$components/filter.svelte";
+import PageIntro from "$components/page-intro.svelte";
+import IdeasList from "$components/ideas-list.svelte";
+import Layout from "$layouts/base.astro";
+import { ideas } from "$data/tags";
+import Tags from "$components/tags.svelte";
+
+const content = await getCollection("ideas");
+---
+
+<Layout title="ideas | dmitrykrasnov" description="Astro.description">
+  <PageIntro heading="Ideas" subheading="Great Ideas, Lightly Used">
+    <Filter client:load label="Search ideas..." />
+  </PageIntro>
+  <div class="h-20"></div>
+  <section>
+    <Tags tags={ideas} client:load />
+    <div class="h-10"></div>
+    <IdeasList ideas={content} client:load />
+  </section>
+</Layout>

@@ -1,8 +1,9 @@
 import { defineCollection, z } from "astro:content";
 
-const post = z.object({
+const idea = z.object({
   title: z.string(),
   description: z.string(),
+  date: z.string(),
 });
 
 const recipe = z.object({
@@ -12,6 +13,6 @@ const recipe = z.object({
 });
 
 export const collections = {
-  posts: defineCollection({ schema: post }),
+  ideas: defineCollection({ schema: idea }),
   recipes: defineCollection({ schema: recipe }),
 };
