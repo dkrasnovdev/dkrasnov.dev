@@ -27,13 +27,13 @@ dependencies:
     specifier: ^2.30.0
     version: 2.30.0(react@18.2.0)
   '@types/react':
-    specifier: ^18.0.21
+    specifier: ^18.2.20
     version: 18.2.20
   '@types/react-dom':
-    specifier: ^18.0.6
+    specifier: ^18.2.7
     version: 18.2.7
   astro:
-    specifier: ^2.10.5
+    specifier: ^2.10.7
     version: 2.10.7(sharp@0.32.4)
   clsx:
     specifier: ^2.0.0
@@ -60,19 +60,19 @@ dependencies:
     specifier: ^0.5.2
     version: 0.5.2(prettier-plugin-astro@0.11.0)(prettier-plugin-svelte@3.0.3)(prettier@3.0.1)
   react:
-    specifier: ^18.0.0
+    specifier: ^18.2.0
     version: 18.2.0
   react-dom:
-    specifier: ^18.0.0
+    specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
   sharp:
     specifier: ^0.32.4
     version: 0.32.4
   svelte:
-    specifier: ^4.0.0
+    specifier: ^4.2.0
     version: 4.2.0
   tailwindcss:
-    specifier: ^3.0.24
+    specifier: ^3.3.3
     version: 3.3.3
 
 devDependencies:
@@ -83,8 +83,8 @@ devDependencies:
     specifier: ^6.3.0
     version: 6.3.0(eslint@8.47.0)(typescript@5.1.6)
   autoprefixer:
-    specifier: ^10.4.14
-    version: 10.4.14(postcss@8.4.27)
+    specifier: ^10.4.15
+    version: 10.4.15(postcss@8.4.27)
   eslint:
     specifier: ^8.47.0
     version: 8.47.0
@@ -265,7 +265,7 @@ packages:
       tailwindcss: ^3.0.24
     dependencies:
       astro: 2.10.7(sharp@0.32.4)
-      autoprefixer: 10.4.14(postcss@8.4.27)
+      autoprefixer: 10.4.15(postcss@8.4.27)
       postcss: 8.4.27
       postcss-load-config: 4.0.1(postcss@8.4.27)
       tailwindcss: 3.3.3
@@ -1886,15 +1886,15 @@ packages:
       synckit: 0.8.5
     dev: true
 
-  /autoprefixer@10.4.14(postcss@8.4.27):
-    resolution: {integrity: sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==}
+  /autoprefixer@10.4.15(postcss@8.4.27):
+    resolution: {integrity: sha512-KCuPB8ZCIqFdA4HwKXsvz7j6gvSDNhDP7WnUjBleRkKjPdvCmHFuQ77ocavI8FT6NdvlBnE2UFr2H4Mycn8Vew==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.10
-      caniuse-lite: 1.0.30001519
+      caniuse-lite: 1.0.30001520
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -1992,7 +1992,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001519
+      caniuse-lite: 1.0.30001520
       electron-to-chromium: 1.4.490
       node-releases: 2.0.13
       update-browserslist-db: 1.0.11(browserslist@4.21.10)
@@ -2044,8 +2044,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /caniuse-lite@1.0.30001519:
-    resolution: {integrity: sha512-0QHgqR+Jv4bxHMp8kZ1Kn8CH55OikjKJ6JmKkZYP1F3D7w+lnFXF70nG5eNfsZS89jadi5Ywy5UCSKLAglIRkg==}
+  /caniuse-lite@1.0.30001520:
+    resolution: {integrity: sha512-tahF5O9EiiTzwTUqAeFjIZbn4Dnqxzz7ktrgGlMYNLH43Ul26IgTMH/zvL3DG0lZxBYnlT04axvInszUsZULdA==}
 
   /ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
