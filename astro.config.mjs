@@ -4,20 +4,22 @@ import mdx from "@astrojs/mdx";
 import svelte from "@astrojs/svelte";
 import react from "@astrojs/react";
 
+import prefetch from "@astrojs/prefetch";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://dkrasnov.dev",
   markdown: {
     shikiConfig: {
       theme: "css-variables",
-      wrap: true,
+      wrap: true
     }
   },
   experimental: {
-    assets: true,
+    assets: true
   },
   image: {
-    service: sharpImageService(),
+    service: sharpImageService()
   },
-  integrations: [tailwind(), mdx(), svelte(), react()],
+  integrations: [tailwind(), mdx(), svelte(), react(), prefetch()]
 });
