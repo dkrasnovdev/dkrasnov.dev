@@ -111,7 +111,7 @@ details summary::-webkit-details-marker {
 }
 
 [cmdk-root] {
-  @apply absolute inset-x-0 bottom-0 z-30 mx-auto max-w-xl overflow-hidden rounded-b-none rounded-t-xl border-2 before:absolute before:inset-0 before:z-[-1] before:bg-neutral-500 supports-[backdrop-filter]:before:bg-neutral-950/90 supports-[backdrop-filter]:before:backdrop-blur-md sm:bottom-auto sm:rounded-b-xl;
+  @apply absolute inset-x-0 z-30 mx-2.5 max-w-xl overflow-hidden rounded-xl border-2 before:absolute before:inset-0 before:z-[-1] before:bg-neutral-500 supports-[backdrop-filter]:before:bg-neutral-950/90 supports-[backdrop-filter]:before:backdrop-blur-md sm:bottom-auto;
 }
 
 [cmdk-input-container] {
