@@ -36,6 +36,14 @@ I am passionate about using new tools to get the best developer experience and b
 - [Raycast](https://raycast.com)
 - [Pure Paste](https://sindresorhus.com/pure-paste)
 
+## Favourite Things
+
+- **Book**: The Fall by Albert Camus
+- **Movies**: The Lord of the Rings
+- **TV Show**: It's Always Sunny in Philadelphia
+- **Anime**: Ergo Proxy
+- **Podcast**: Huberman Lab
+
 
 
 

@@ -4,6 +4,7 @@ const idea = z.object({
   title: z.string(),
   description: z.string(),
   date: z.string(),
+  tags: z.array(z.string()),
 });
 
 const recipe = z.object({

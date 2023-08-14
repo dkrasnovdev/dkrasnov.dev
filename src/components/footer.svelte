@@ -1,9 +1,5 @@
 <script lang="ts">
-  const menu = [
-    ["GitHub", "https://github.com/dkrasnovdev"],
-    ["LinkedIn", "https://github.com/dkrasnovdev"],
-    ["Telegram", "https://t.me/dkrasnovdev"],
-  ];
+  import { socials } from "$data/socials";
 </script>
 
 <footer
@@ -19,10 +15,11 @@
     >
     <nav aria-label="Socials">
       <ul role="list" class="flex items-center">
-        {#each menu as [name, href]}
+        {#each socials as [name, href]}
           <li>
             <a
               {href}
+              target="_blank"
               class="rounded-md px-2.5 py-1.5 text-sm font-semibold text-neutral-500 transition hover:text-neutral-200 focus:outline-none focus:ring focus:ring-inset"
             >
               {name}

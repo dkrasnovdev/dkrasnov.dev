@@ -15,6 +15,7 @@ const recipes = [
 ]
 
 const ideas = [
+  "Posts",
   "Notes",
   "Snippets"
 ]

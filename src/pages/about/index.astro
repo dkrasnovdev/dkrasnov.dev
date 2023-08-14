@@ -1,5 +1,6 @@
 ---
 import Layout from "$layouts/base.astro";
+import { socials } from "$data/socials";
 import AboutMe from "$components/about.md";
 import ImageGrid from "$components/image-grid.astro";
 import PageIntro from "$components/page-intro.svelte";
@@ -11,11 +12,26 @@ import PageIntro from "$components/page-intro.svelte";
   <section
     class="grid min-h-content items-start gap-20 lg:grid-cols-[1fr,minmax(0,1fr)]"
   >
-    <div class="my-8 space-y-6 lg:space-y-10">
-      <article><AboutMe /></article>
-    </div>
     <div class="overflow-hidden">
       <ImageGrid />
+      <ul role="list" class="flex w-full items-center justify-center">
+        {
+          socials.map(([name, href]) => (
+            <li>
+              <a
+                {href}
+                target="_blank"
+                class="rounded-md px-2.5 py-1.5 text-sm font-semibold text-neutral-500 transition hover:text-neutral-200 focus:outline-none focus:ring focus:ring-inset"
+              >
+                {name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <div class="my-8 space-y-6 lg:space-y-10">
+      <article><AboutMe /></article>
     </div>
   </section>
 </Layout>
