@@ -8,9 +8,7 @@ import { ideas } from "$data/tags";
 import Tags from "$components/tags.svelte";
 
 const content = await getCollection("ideas").then((ideas) =>
-  ideas.sort((a, b) => {
-    return new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf();
-  }),
+  ideas.sort((a, b) => b.data.order - a.data.order),
 );
 ---
 

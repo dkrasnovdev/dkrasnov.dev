@@ -1,7 +1,8 @@
 ---
+order: 1
 title: "What I Use"
 description: "My Setup in 2023"
-date: "08-15-2023"
+date: "15 Aug 2023"
 tags: ["posts"]
 ---
 

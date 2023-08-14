@@ -1,6 +1,7 @@
 import { defineCollection, z } from "astro:content";
 
 const idea = z.object({
+  order: z.number(),
   title: z.string(),
   description: z.string(),
   date: z.string(),
