@@ -11,7 +11,7 @@
     <a
       href="/"
       class="-ml-2.5 rounded-md px-2.5 py-1.5 text-sm font-semibold text-neutral-500 transition hover:text-neutral-200 focus:outline-none focus:ring focus:ring-inset"
-      >dmitrykrasnov</a
+      >dkrasnov.dev</a
     >
     <nav aria-label="Socials">
       <ul role="list" class="flex items-center">
