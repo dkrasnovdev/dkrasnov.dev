@@ -92,12 +92,12 @@ const groups: Array<Group> = [
     items: [
       {
         icon: "FileCv",
-        name: "Resume (Light)",
+        name: "CV (Light)",
         href: "/dkrasnov-cv-light.pdf"
       },
       {
         icon: "FileCv",
-        name: "Resume (Dark)",
+        name: "CV (Dark)",
         href: "/dkrasnov-cv-dark.pdf"
       }
     ]

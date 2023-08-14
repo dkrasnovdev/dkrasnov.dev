@@ -1,6 +1,5 @@
 ---
 import Layout from "$layouts/base.astro";
-import Link from "$components/link.svelte";
 import PageIntro from "$components/page-intro.svelte";
 import { getCollection, type CollectionEntry } from "astro:content";
 
@@ -25,22 +24,33 @@ const { idea } = Astro.props;
 const { Content, headings } = await idea.render();
 ---
 
-<Layout title={idea.data.title} description={idea.data.description}>
+<Layout
+  title={`${idea.data.title} | dmitrykrasnov`}
+  description={idea.data.description}
+>
+  <PageIntro heading={idea.data.title} subheading={idea.data.description}>
+    <div>
+      <a
+        href="/ideas"
+        class="inline-flex h-12 w-full items-center justify-center rounded-full border-2 bg-neutral-900 px-6 font-semibold transition hover:bg-neutral-800 focus:outline-none focus:ring lg:w-fit lg:justify-start"
+        >&larr;&nbsp;Back</a
+      >
+    </div>
+  </PageIntro>
+  <hr class="my-5" />
   <div class="grid grid-cols-1 lg:grid-cols-[auto,1fr] lg:gap-20">
     <div>
-      <PageIntro heading={idea.data.title} subheading={idea.data.description} />
-      <hr class="my-5" />
-      <ul class="mt-10 hidden lg:block">
+      <ul class="hidden space-y-1 lg:block">
         <li
           class="tracking-loose text-xs font-medium uppercase leading-loose text-neutral-500"
         >
-          Headings
+          Table of Contents
         </li>
         {
           headings.map(({ text }) => (
             <li>
               <a
-                href={`#${text}`}
+                href={`#${text.replace(" ", "-").toLowerCase()}`}
                 class="underline-offset-2 hover:underline focus:underline focus:outline-none"
               >
                 {text}

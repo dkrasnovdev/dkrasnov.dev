@@ -3,49 +3,15 @@
 
 ## About me
 
-Hey! I'm Dmitry. I’m a polyglot programmer, self-starter and coding enthusiast. I use TypeScript and Go professionally, but programming is both a hobby and a profession for me.
+Hey! I'm Dmitry, a versatile programmer who loves taking the initiative and has a real passion for coding.
 
-I am passionate about using new tools to get the best developer experience and build products with seamless user experience. I am constantly following the progress of the software engineering world.
+I've studied at [**Siberian Federal University**](https://sfu-kras.ru/en), earning a Bachelor's degree in **Applied Informatics** and a Master's degree in **Information Systems & Technology**.
 
-## What I Use
+Programming is more than just a job to me – it's a genuine interest and a personal pursuit. I enjoy using the latest tools to make coding smooth and crafting user-friendly products that hit the mark.
 
-### Hardware
+I value an active lifestyle. I believe in keeping both mind and body in shape. It's a principle I think applies universally – a healthy body sets the stage for success in any field.
 
-- HUAWEI MateView GT 34" (ZQE-CAA)
-- 13&quot; Macbook Air (2020)
+Life, to me, is all about embracing the simple joys and maintaining an optimistic outlook. This mindset fuels my curiosity and open-minded approach, both of which are vital in the ever-evolving world of software development. I'm always keen on learning and staying up-to-date with new ideas and technologies.
 
-### Dev Tools
-
-- Editor: [Neovim](https://github.com/neovim/neovim)
-- Environment:
-  - [iTerm2](https://iterm2.com/)
-  - [zsh (oh-my-zsh)](https://github.com/ohmyzsh/ohmyzsh)
-  - [tmux](https://github.com/tmux/tmux)
-  - [fzf](https://github.com/junegunn/fzf)
-  - [fnm (fast node manager)](https://github.com/Schniz/fnm)
-  - [github cli](https://cli.github.com/)
-  - [brew](https://brew.sh/)
-
-### Software
-
-- [Excalidraw](https://excalidraw.com)
-- [Notion](https://notion.so)
-- [Linear](https://linear.app)
-- [Telegram](https://telegram.org)
-- [Discord](https://discord.com)
-- [Raycast](https://raycast.com)
-- [Pure Paste](https://sindresorhus.com/pure-paste)
-
-## Favourite Things
-
-- **Book**: The Fall by Albert Camus
-- **Movies**: The Lord of the Rings
-- **TV Show**: It's Always Sunny in Philadelphia
-- **Anime**: Ergo Proxy
-- **Podcast**: Huberman Lab
-
-
-
-
-
+Thank you for visiting and getting to know a bit about me. Feel free to contact me – I'm always up for a conversation!
 

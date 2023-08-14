@@ -2,7 +2,8 @@
 import CommandMenuTrigger from "$components/command-menu-trigger";
 import { clsx } from "clsx";
 function isCurrent(url: string) {
-  return Astro.url.pathname.replace(/(\/.*?)\/$/, "$1") === url;
+  const path = Astro.url.pathname.replace(/(\/.*?)\/$/, "$1");
+  return path === url;
 }
 
 const menu = [

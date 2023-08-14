@@ -7,7 +7,11 @@ import Layout from "$layouts/base.astro";
 import { ideas } from "$data/tags";
 import Tags from "$components/tags.svelte";
 
-const content = await getCollection("ideas");
+const content = await getCollection("ideas").then((ideas) =>
+  ideas.sort((a, b) => {
+    return new Date(b.data.date).valueOf() - new Date(a.data.date).valueOf();
+  }),
+);
 ---
 
 <Layout title="ideas | dmitrykrasnov" description="Astro.description">
