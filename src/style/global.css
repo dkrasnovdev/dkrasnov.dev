@@ -12,6 +12,10 @@
   }
 }
 
+::selection {
+  background-color: #47a3f3;
+  color: #fefefe;
+}
 
 :root {
   color-scheme: dark;
