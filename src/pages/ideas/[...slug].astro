@@ -1,5 +1,6 @@
 ---
 import Layout from "$layouts/base.astro";
+import Link from "$components/link.svelte";
 import PageIntro from "$components/page-intro.svelte";
 import { getCollection, type CollectionEntry } from "astro:content";
 
@@ -21,14 +22,33 @@ export type Props = {
 };
 
 const { idea } = Astro.props;
-const { Content } = await idea.render();
+const { Content, headings } = await idea.render();
 ---
 
 <Layout title={idea.data.title} description={idea.data.description}>
-  <div class="grid grid-cols-1 gap-20 lg:grid-cols-[auto,1fr]">
+  <div class="grid grid-cols-1 lg:grid-cols-[auto,1fr] lg:gap-20">
     <div>
       <PageIntro heading={idea.data.title} subheading={idea.data.description} />
       <hr class="my-5" />
+      <ul class="mt-10 hidden lg:block">
+        <li
+          class="tracking-loose text-xs font-medium uppercase leading-loose text-neutral-500"
+        >
+          Headings
+        </li>
+        {
+          headings.map(({ text }) => (
+            <li>
+              <a
+                href={`#${text}`}
+                class="underline-offset-2 hover:underline focus:underline focus:outline-none"
+              >
+                {text}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
     </div>
     <article>
       <Content />
