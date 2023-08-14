@@ -14,4 +14,3 @@ I value an active lifestyle. I believe in keeping both mind and body in shape. I
 Life, to me, is all about embracing the simple joys and maintaining an optimistic outlook. This mindset fuels my curiosity and open-minded approach, both of which are vital in the ever-evolving world of software development. I'm always keen on learning and staying up-to-date with new ideas and technologies.
 
 Thank you for visiting and getting to know a bit about me. Feel free to contact me – I'm always up for a conversation!
-

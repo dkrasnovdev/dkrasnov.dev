@@ -2,20 +2,13 @@
   {
     "name": "MinIO Object Storage",
     "description": "Setting up a MinIO server with predefined buckets using Docker Compose.",
-    "tags": [
-      "docker",
-      "docker-compose",
-      "postgres",
-      "minio"
-    ],
+    "tags": ["docker", "docker-compose", "postgres", "minio"],
     "repository": "https://github.com/dkrasnovdev/siberiana-minio"
   },
   {
     "name": "Strong Password Validation",
     "description": "Registration form with secure password using Zod and React-Hook-Form",
-    "tags": [
-      "zod"
-    ],
+    "tags": ["zod"],
     "repository": "https://github.com/dkrasnovdev"
   }
 ]

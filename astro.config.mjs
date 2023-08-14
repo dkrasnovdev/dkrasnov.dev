@@ -12,14 +12,14 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: "css-variables",
-      wrap: true
-    }
+      wrap: true,
+    },
   },
   experimental: {
-    assets: true
+    assets: true,
   },
   image: {
-    service: sharpImageService()
+    service: sharpImageService(),
   },
-  integrations: [tailwind(), mdx(), svelte(), react(), prefetch()]
+  integrations: [tailwind(), mdx(), svelte(), react(), prefetch()],
 });

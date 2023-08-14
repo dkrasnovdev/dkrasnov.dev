@@ -8,16 +8,8 @@ const projects = [
   "GraphQL",
 ];
 
-const recipes = [
-  "Docker",
-  "Zustand",
-  "Zod"
-]
+const recipes = ["Docker", "Zustand", "Zod"];
 
-const ideas = [
-  "Posts",
-  "Notes",
-  "Snippets"
-]
+const ideas = ["Posts", "Notes", "Snippets"];
 
 export { recipes, projects, ideas };

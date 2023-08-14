@@ -8,7 +8,7 @@ const recipes = [
       description: recipe.description,
       icon: getIcon(recipe.tags),
       tags: recipe.tags,
-      repository: recipe.repository
+      repository: recipe.repository,
     };
   }),
 ];

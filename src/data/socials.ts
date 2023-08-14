@@ -6,4 +6,4 @@ const socials = [
   ["Telegram", "https://t.me/dkrasnovdev"],
 ];
 
-export { socials }
+export { socials };

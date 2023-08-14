@@ -4,23 +4,58 @@ import Banner from "$components/banner.svelte";
 import CommandMenu from "$components/command-menu";
 import Header from "$components/header.astro";
 import Footer from "$components/footer.svelte";
+import OpenGraphImage from "$assets/opengraph-image.jpg";
 import { groups, suggestions } from "$data/cmdk";
 export type Props = {
   title: string;
-  description: string;
 };
 
-const { title, description } = Astro.props;
+const { title } = Astro.props;
+
+const meta = {
+  title: "dmitrykrasnov",
+  description: "A polyglot programmer, self-starter and coding enthusiast.",
+};
 ---
 
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={description} />
     <title>{title}</title>
+    <meta name="description" content={meta.description} />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robot" content="index, follow" />
+    <meta name="generator" content={Astro.generator} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:url" content="https://dkrasnov.dev" />
+    <meta property="og:site_name" content={meta.title} />
+    <meta property="og:locale" content="en-US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content={`image/${OpenGraphImage.format}`} />
+    <meta property="og:image:width" content={OpenGraphImage.width.toString()} />
+    <meta
+      property="og:image:height"
+      content={OpenGraphImage.height.toString()}
+    />
+    <meta property="og:image" content={OpenGraphImage.src} />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={meta.title} />
+    <meta property="twitter:description" content={meta.description} />
+    <meta
+      property="twitter:image:type"
+      content={`image/${OpenGraphImage.format}`}
+    />
+    <meta
+      property="twitter:image:width"
+      content={OpenGraphImage.width.toString()}
+    />
+    <meta
+      property="twitter:image:height"
+      content={OpenGraphImage.height.toString()}
+    />
+    <meta property="twitter:image" content={OpenGraphImage.src} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   </head>
   <body>
     <Banner />

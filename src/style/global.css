@@ -29,73 +29,73 @@
     100vh - var(--banner-height) - var(--header-height) - (var(--page-top) * 2)
   );
 
-  --astro-code-color-text: hsla(0,0%,93%,1);
+  --astro-code-color-text: hsla(0, 0%, 93%, 1);
   --astro-code-color-background: transparent;
-  --astro-code-token-constant: hsla(0,0%,93%,1);
-  --astro-code-token-string: hsla(131,43%,57%,1);
-  --astro-code-token-comment: hsla(0,0%,63%,1);
-  --astro-code-token-keyword: hsla(341,90%,67%,1);
-  --astro-code-token-parameter: hsla(35,100%,52%,1);
-  --astro-code-token-function: hsla(210,100%,66%,1);
-  --astro-code-token-string-expression: hsla(131,43%,57%,1);
-  --astro-code-token-punctuation: hsla(0,0%,93%,1);
-  --astro-code-token-link: hsla(131,43%,57%,1);
+  --astro-code-token-constant: hsla(0, 0%, 93%, 1);
+  --astro-code-token-string: hsla(131, 43%, 57%, 1);
+  --astro-code-token-comment: hsla(0, 0%, 63%, 1);
+  --astro-code-token-keyword: hsla(341, 90%, 67%, 1);
+  --astro-code-token-parameter: hsla(35, 100%, 52%, 1);
+  --astro-code-token-function: hsla(210, 100%, 66%, 1);
+  --astro-code-token-string-expression: hsla(131, 43%, 57%, 1);
+  --astro-code-token-punctuation: hsla(0, 0%, 93%, 1);
+  --astro-code-token-link: hsla(131, 43%, 57%, 1);
 }
 
 [id] {
-	scroll-margin-top: var(--page-top);
+  scroll-margin-top: var(--page-top);
 }
 
 article {
-	@apply max-w-prose;
+  @apply max-w-prose;
 }
 article > *:not(:first-child) {
-	@apply mt-7;
+  @apply mt-7;
 }
 
 article h2 {
-	@apply text-lg font-semibold tracking-tight;
+  @apply text-lg font-semibold tracking-tight;
 }
 
 article h3 {
-	@apply font-semibold tracking-tight;
+  @apply font-semibold tracking-tight;
 }
 article h2:not(:first-child),
 article h3,
 article h4,
 article h5 {
-	@apply mt-14;
+  @apply mt-14;
 }
 article a {
-	@apply inline font-medium text-neutral-200 underline-offset-2 after:inline-block after:whitespace-pre hover:underline focus:outline-none focus:underline underline-offset-2;
+  @apply inline font-medium text-neutral-200 underline-offset-2 underline-offset-2 after:inline-block after:whitespace-pre hover:underline focus:underline focus:outline-none;
 }
 article a[href^="http"] {
-	@apply after:content-['_↗'];
+  @apply after:content-['_↗'];
 }
 article a:hover {
-	@apply underline;
+  @apply underline;
 }
 article blockquote {
-	@apply border-l-2 pl-3 text-neutral-500;
+  @apply border-l-2 pl-3 text-neutral-500;
 }
 article ul,
 article ol {
-	@apply pl-6 leading-loose;
+  @apply pl-6 leading-loose;
 }
 article ul {
-	@apply list-disc;
+  @apply list-disc;
 }
 article ol {
-	@apply list-decimal;
+  @apply list-decimal;
 }
 article li > pre {
-	@apply mb-1.5;
+  @apply mb-1.5;
 }
 article pre {
-	@apply rounded-xl p-4;
+  @apply rounded-xl p-4;
 }
 article code {
-	@apply rounded bg-transparent p-1 font-mono text-sm font-medium;
+  @apply rounded bg-transparent p-1 font-mono text-sm font-medium;
 }
 
 details summary::-webkit-details-marker {

@@ -93,15 +93,15 @@ const groups: Array<Group> = [
       {
         icon: "FileCv",
         name: "CV (Light)",
-        href: "/dkrasnov-cv-light.pdf"
+        href: "/dkrasnov-cv-light.pdf",
       },
       {
         icon: "FileCv",
         name: "CV (Dark)",
-        href: "/dkrasnov-cv-dark.pdf"
-      }
-    ]
-  }
+        href: "/dkrasnov-cv-dark.pdf",
+      },
+    ],
+  },
 ];
 
 const suggestions: Array<Suggestion> = [

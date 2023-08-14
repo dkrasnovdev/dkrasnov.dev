@@ -1,5 +1,3 @@
-const tags = [
-  "Docker"
-] as const;
+const tags = ["Docker"] as const;
 
 export { tags };
