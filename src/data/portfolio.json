@@ -11,8 +11,8 @@
     "repository": "https://github.com/dkrasnovdev/dkrasnov.dev"
   },
   {
-    "name": "ai.sfu-kras.ru",
-    "description": "",
+    "name": "AI Laboratory",
+    "description": "Landing page",
     "tags": [
       "next.js",
       "sanity.io",
@@ -22,8 +22,8 @@
     "repository": "https://ai.sfu-kras.ru"
   },
   {
-    "name": "science.sfu-kras.ru",
-    "description": "",
+    "name": "Science SibFU",
+    "description": "Web portal",
     "tags": [
       "next.js",
       "react",
