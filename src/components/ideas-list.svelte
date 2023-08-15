@@ -6,7 +6,7 @@
   import Card from "./card.svelte";
 
   $: queriedIdeas = ideas.filter(({ data }) =>
-    hasMatch(data, $searchQuery, ["title", "tags"]),
+    hasMatch(data, $searchQuery, ["title", "description", "tags"]),
   );
 </script>
 

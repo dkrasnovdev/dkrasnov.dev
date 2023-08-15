@@ -3,9 +3,9 @@
 
 ## About me
 
-Hey! I'm Dmitry, a versatile programmer who loves taking the initiative and has a real passion for coding.
+Hey! I'm **Dmitry Krasnov** 👋, a versatile programmer who loves taking the initiative and has a real passion for coding.
 
-I've studied at [**Siberian Federal University**](https://sfu-kras.ru/en), earning a Bachelor's degree in **Applied Informatics** and a Master's degree in **Information Systems & Technology**.
+I've studied at [**Siberian Federal University**](https://sfu-kras.ru/en), earning a Bachelor's degree in Applied Informatics and a Master's degree in Information Systems & Technology.
 
 Programming is more than just a job to me – it's a genuine interest and a personal pursuit. I enjoy using the latest tools to make coding smooth and crafting user-friendly products that hit the mark.
 

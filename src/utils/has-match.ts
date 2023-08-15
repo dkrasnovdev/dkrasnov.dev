@@ -1,9 +1,9 @@
 export default function hasMatch<T extends Record<string, unknown>>(
   source: T,
-  search: string,
+  query: string,
   includeKeys?: string[],
 ): boolean {
-  const normalizedSearch = search.normalize().toLowerCase();
+  const normalizedQuery = query.normalize().toLowerCase();
 
   const result = Object.keys(source).map((key) => {
     const value = source[key];
@@ -15,7 +15,7 @@ export default function hasMatch<T extends Record<string, unknown>>(
     if (typeof value === "string") {
       const normalizedValue = value.normalize().toLowerCase();
 
-      return normalizedValue.includes(normalizedSearch);
+      return normalizedValue.includes(normalizedQuery);
     }
 
     if (Array.isArray(value)) {
@@ -23,7 +23,7 @@ export default function hasMatch<T extends Record<string, unknown>>(
         if (typeof item === "string") {
           const normalizedValue = item.normalize().toLowerCase();
 
-          return normalizedValue.includes(normalizedSearch);
+          return normalizedValue.includes(normalizedQuery);
         }
 
         return false;
