@@ -11,14 +11,16 @@
   this={element}
   {href}
   class="inline font-medium text-neutral-300 underline-offset-2 transition after:inline-block after:whitespace-pre hover:underline"
-  class:internal-link={decorations && !isExternal}
-  class:external-link={decorations && isExternal}><slot /></svelte:element
+  class:internal-link={!!href && decorations && !isExternal}
+  class:external-link={!!href && decorations && isExternal}
+  ><slot /></svelte:element
 >
 
 <style lang="postcss">
   .internal-link {
     @apply after:content-['_→'];
   }
+
   .external-link {
     @apply after:content-['_↗'];
   }

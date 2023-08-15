@@ -2,25 +2,42 @@
   {
     "name": "dkrasnov.dev",
     "description": "Personal website",
-    "tags": ["typescript", "astro", "svelte", "react"],
-    "repository": "https://github.com/dkrasnovdev/dkrasnov.dev"
-  },
-  {
-    "name": "AI Laboratory",
-    "description": "Landing page",
-    "tags": ["next.js", "sanity.io", "react", "typescript"],
-    "repository": "https://ai.sfu-kras.ru"
-  },
-  {
-    "name": "Science SibFU",
-    "description": "Web portal",
-    "tags": ["next.js", "react", "typescript"],
-    "repository": "https://science.sfu-kras.ru"
+    "tags": [
+      "typescript",
+      "astro",
+      "svelte",
+      "react"
+    ],
+    "url": "https://github.com/dkrasnovdev/dkrasnov.dev"
   },
   {
     "name": "Siberiana GraphQL API",
     "description": "Cultural Heritage Aggregator",
-    "tags": ["golang", "graphql"],
-    "repository": "https://github.com/dkrasnovdev/siberiana-api"
+    "tags": [
+      "golang",
+      "graphql"
+    ],
+    "url": "https://github.com/dkrasnovdev/siberiana-api"
+  },
+  {
+    "name": "AI Laboratory",
+    "description": "Landing page",
+    "tags": [
+      "next.js",
+      "sanity.io",
+      "react",
+      "typescript"
+    ],
+    "url": ""
+  },
+  {
+    "name": "Science SibFU",
+    "description": "Web portal",
+    "tags": [
+      "next.js",
+      "react",
+      "typescript"
+    ],
+    "url": "https://science.sfu-kras.ru"
   }
 ]
