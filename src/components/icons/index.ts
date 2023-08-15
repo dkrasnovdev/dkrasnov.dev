@@ -9,3 +9,4 @@ export { default as IconBrandDocker } from "./brand-docker.svelte";
 export { default as IconBrandZod } from "./brand-zod.svelte";
 export { default as IconBrandNextJS } from "./brand-nextjs.svelte";
 export { default as IconBrandReactHookForm } from "./brand-react-hook-form.svelte";
+export { default as IconBrandNeovim } from "./brand-neovim.svelte";

@@ -23,7 +23,7 @@ The Feynman Technique developed by Nobel prize-winning physicist [Richard Feynma
 - Identify parts of your lesson that aren't strong or you yourself are confused about. Go back to your source material, to understand it better.
 - Review and simplify your lesson
 
-Incorporating  the Feynman Technique into your blogging approach can further enhance the quality of your content. By breaking down complex concepts into simple explanations, you not only help your readers but also reinforce your own understanding of the material.
+Incorporating the Feynman Technique into your blogging approach can further enhance the quality of your content. By breaking down complex concepts into simple explanations, you not only help your readers but also reinforce your own understanding of the material.
 
 The process of explaining a concept in writing requires a deep understanding of the subject matter. When you can break down intricate concepts into understandable language, it demonstrates your mastery of the topic. Moreover, the act of writing can lead you to research and learn even more about the subject, helping you become a true expert.
 

@@ -1,5 +1,13 @@
 [
   {
+    "name": "Neovim Configuration",
+    "description": "Plugins, keybindngs, inspired by the CEO of TheStartup™",
+    "tags": [
+      "neovim"
+    ],
+    "url": "https://github.com/dkrasnovdev/nvim-config"
+  },
+  {
     "name": "MinIO Object Storage",
     "description": "MinIO server with predefined buckets.",
     "tags": [

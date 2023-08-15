@@ -2,42 +2,25 @@
   {
     "name": "dkrasnov.dev",
     "description": "Personal website",
-    "tags": [
-      "typescript",
-      "astro",
-      "svelte",
-      "react"
-    ],
+    "tags": ["typescript", "astro", "svelte", "react"],
     "url": "https://github.com/dkrasnovdev/dkrasnov.dev"
   },
   {
     "name": "Siberiana GraphQL API",
     "description": "Cultural Heritage Aggregator",
-    "tags": [
-      "golang",
-      "graphql"
-    ],
+    "tags": ["golang", "graphql"],
     "url": "https://github.com/dkrasnovdev/siberiana-api"
   },
   {
     "name": "AI Laboratory",
     "description": "Landing page",
-    "tags": [
-      "next.js",
-      "sanity.io",
-      "react",
-      "typescript"
-    ],
+    "tags": ["next.js", "sanity.io", "react", "typescript"],
     "url": ""
   },
   {
     "name": "Science SibFU",
     "description": "Web portal",
-    "tags": [
-      "next.js",
-      "react",
-      "typescript"
-    ],
+    "tags": ["next.js", "react", "typescript"],
     "url": ""
   }
 ]
