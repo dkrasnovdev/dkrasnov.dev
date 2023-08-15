@@ -1,9 +1,14 @@
 ---
 import CommandMenuTrigger from "$components/command-menu-trigger";
 import { clsx } from "clsx";
-function isCurrent(url: string) {
-  const path = Astro.url.pathname.replace(/(\/.*?)\/$/, "$1");
-  return path === url;
+function isCurrentPage(url: string) {
+  let pathname = Astro.url.pathname.replace(/(\/.*?)\/$/, "$1") || "/";
+
+  if (pathname.includes("/ideas")) {
+    pathname = "/ideas";
+  }
+
+  return pathname === url;
 }
 
 const menu = [
@@ -21,7 +26,7 @@ const menu = [
   >
     <a
       href={"/"}
-      aria-current={isCurrent("/") ? "page" : undefined}
+      aria-current={isCurrentPage("/") ? "page" : undefined}
       class="-ml-2.5 flex shrink-0 items-center rounded-xl px-2.5 py-1.5 font-bold transition focus:outline-none focus:ring"
       >dmitrykrasnov</a
     >
@@ -75,11 +80,11 @@ const menu = [
                     <li>
                       <a
                         href={href}
-                        aria-current={isCurrent(href) ? "page" : undefined}
+                        aria-current={isCurrentPage(href) ? "page" : undefined}
                         class={clsx(
                           "flex justify-between rounded-md p-2.5 font-semibold transition hover:bg-neutral-800 hover:text-neutral-200 focus:outline-none focus:ring focus:ring-inset [&:hover>svg]:text-neutral-200",
                           {
-                            "text-neutral-500": !isCurrent(href),
+                            "text-neutral-500": !isCurrentPage(href),
                           },
                         )}
                       >
@@ -87,7 +92,7 @@ const menu = [
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           class={clsx("transition", {
-                            "text-neutral-500": !isCurrent(href),
+                            "text-neutral-500": !isCurrentPage(href),
                           })}
                           width="20"
                           height="20"
@@ -123,17 +128,17 @@ const menu = [
             <li>
               <a
                 href={href}
-                aria-current={isCurrent(href) ? "page" : undefined}
+                aria-current={isCurrentPage(href) ? "page" : undefined}
                 class={clsx(
                   "rounded-full font-semibold transition hover:text-neutral-200 focus:text-neutral-100 focus:outline-none",
                   {
-                    "text-neutral-500": !isCurrent(href),
+                    "text-neutral-500": !isCurrentPage(href),
                   },
                 )}
               >
                 <span class="relative px-2 py-1">
                   {name}
-                  {isCurrent(href) && (
+                  {isCurrentPage(href) && (
                     <div class="absolute inset-0 top-7 z-[-1] h-0.5 bg-neutral-800 bg-gradient-to-r from-transparent to-neutral-900" />
                   )}
                 </span>
