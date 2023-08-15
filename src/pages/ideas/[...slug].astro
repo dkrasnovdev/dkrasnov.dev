@@ -24,10 +24,7 @@ const { idea } = Astro.props;
 const { Content, headings } = await idea.render();
 ---
 
-<Layout
-  title={`${idea.data.title} | dmitrykrasnov`}
-  description={idea.data.description}
->
+<Layout title={`${idea.data.title} | dmitrykrasnov`}>
   <PageIntro heading={idea.data.title} subheading={idea.data.description}>
     <div>
       <a
@@ -50,7 +47,7 @@ const { Content, headings } = await idea.render();
           headings.map(({ text }) => (
             <li>
               <a
-                href={`#${text.replace(" ", "-").toLowerCase()}`}
+                href={`#${text.replaceAll(" ", "-").toLowerCase()}`}
                 class="underline-offset-2 hover:underline focus:underline focus:outline-none"
               >
                 {text}
