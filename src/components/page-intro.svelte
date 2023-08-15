@@ -1,7 +1,6 @@
 <script lang="ts">
   export let heading: string;
   export let subheading: Optional<string> = undefined;
-  export let tagline: Optional<string> = undefined;
 </script>
 
 <section class="flex flex-col items-center justify-between gap-5 md:flex-row">
@@ -10,9 +9,6 @@
     <div class="h-1" />
     {#if subheading}
       <p class="font-serif italic">{subheading}</p>
-    {/if}
-    {#if tagline}
-      <p>{tagline}</p>
     {/if}
   </div>
   {#if $$slots.default}
