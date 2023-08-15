@@ -10,7 +10,7 @@
 
 <li
   class={clsx({
-    "pointer-events-none opacity-50": !url,
+    "pointer-events-none select-none opacity-50": !url,
   })}
 >
   <Card
