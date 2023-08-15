@@ -2,21 +2,25 @@
 import Layout from "$layouts/base.astro";
 import { socials } from "$data/socials";
 import AboutMe from "$components/about.md";
-import ImageGrid from "$components/image-grid.astro";
 import PageIntro from "$components/page-intro.svelte";
+import { Image } from "astro:assets";
+import dkrasnov from "$assets/dkrasnov.png";
 ---
 
 <Layout title="about me | dmitrykrasnov">
   <PageIntro heading="Whomst?" subheading="The one and only" />
   <div class="h-20"></div>
   <section
-    class="grid min-h-content items-start gap-20 lg:grid-cols-[1fr,minmax(0,1fr)]"
+    class="grid min-h-content items-start gap-20 lg:grid-cols-[1fr,minmax(0,3fr)]"
   >
-    <div class="order-1 mb-8 space-y-6 lg:-order-1 lg:space-y-10">
-      <article><AboutMe /></article>
-    </div>
-    <div class="overflow-hidden">
-      <ImageGrid />
+    <div class="flex flex-col items-center justify-center overflow-hidden">
+      <Image
+        src={dkrasnov}
+        alt="Chip and Dale"
+        sizes="(max-width: 768px) 213px, 33vw"
+        class="mb-4 h-40 w-40 rounded-full border-2 border-neutral-800 object-cover object-top"
+        loading="eager"
+      />
       <ul role="list" class="flex w-full items-center justify-center py-1">
         {
           socials.map(([name, href]) => (
@@ -32,6 +36,9 @@ import PageIntro from "$components/page-intro.svelte";
           ))
         }
       </ul>
+    </div>
+    <div class="mb-8 space-y-6 lg:space-y-10">
+      <article><AboutMe /></article>
     </div>
   </section>
 </Layout>
