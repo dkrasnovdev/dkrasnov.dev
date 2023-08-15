@@ -83,7 +83,7 @@ const groups: Array<Group> = [
       {
         icon: "BrandLinkedIn",
         name: "LinkedIn",
-        href: "https://linkedin.com/dkrasnovdev",
+        href: "https://www.linkedin.com/in/dkrasnovdev/",
       },
     ],
   },
