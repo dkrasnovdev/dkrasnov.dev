@@ -1,7 +1,7 @@
 [
   {
     "name": "MinIO Object Storage",
-    "description": "Setting up a MinIO server with predefined buckets using Docker Compose.",
+    "description": "MinIO server with predefined buckets.",
     "tags": [
       "docker",
       "docker-compose",
@@ -12,9 +12,19 @@
   },
   {
     "name": "Strong Password Validation",
-    "description": "Registration form with secure password using Zod and React-Hook-Form",
+    "description": "Registration form with secure password using Zod",
     "tags": [
+      "react-hook-form",
       "zod"
+    ],
+    "url": ""
+  },
+  {
+    "name": "Multiple Entries Form",
+    "description": "Submission form with an array of entries using Zustand",
+    "tags": [
+      "react-hook-form",
+      "zustand"
     ],
     "url": ""
   }

@@ -8,7 +8,7 @@ const projects = [
   "GraphQL",
 ];
 
-const recipes = ["Docker", "Zustand", "Zod"];
+const recipes = ["Docker", "React-Hook-Form", "Zustand", "Zod"];
 
 const ideas = ["Posts", "Notes", "Snippets"];
 
