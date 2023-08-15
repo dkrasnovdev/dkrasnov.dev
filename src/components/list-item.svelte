@@ -16,7 +16,7 @@
   <Card
     href={url}
     linkText={!url
-      ? "Coming Soon"
+      ? "Planned"
       : url.startsWith("https://github.com")
       ? "Repository"
       : "Open"}
