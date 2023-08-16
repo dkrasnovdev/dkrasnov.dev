@@ -3,8 +3,9 @@ import tailwind from "@astrojs/tailwind";
 import mdx from "@astrojs/mdx";
 import svelte from "@astrojs/svelte";
 import react from "@astrojs/react";
-
 import prefetch from "@astrojs/prefetch";
+
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,14 +13,16 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: "css-variables",
-      wrap: true,
-    },
+      wrap: true
+    }
   },
   experimental: {
-    assets: true,
+    assets: true
   },
   image: {
-    service: sharpImageService(),
+    service: sharpImageService()
   },
   integrations: [tailwind(), mdx(), svelte(), react(), prefetch()],
+  output: "server",
+  adapter: vercel()
 });
