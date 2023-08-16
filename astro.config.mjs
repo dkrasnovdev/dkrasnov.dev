@@ -23,6 +23,6 @@ export default defineConfig({
     service: sharpImageService()
   },
   integrations: [tailwind(), mdx(), svelte(), react(), prefetch()],
-  output: "server",
+  output: "static",
   adapter: vercel()
 });
