@@ -5,6 +5,7 @@ import svelte from "@astrojs/svelte";
 import react from "@astrojs/react";
 import prefetch from "@astrojs/prefetch";
 
+import vercelStatic from '@astrojs/vercel/static';
 
 // https://astro.build/config
 export default defineConfig({
@@ -22,4 +23,6 @@ export default defineConfig({
     service: sharpImageService()
   },
   integrations: [tailwind(), mdx(), svelte(), react(), prefetch()],
+  output: "static",
+  adapter: vercelStatic()
 });
