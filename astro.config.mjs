@@ -5,7 +5,7 @@ import svelte from "@astrojs/svelte";
 import react from "@astrojs/react";
 import prefetch from "@astrojs/prefetch";
 
-import vercelStatic from '@astrojs/vercel/static';
+import vercelStatic from "@astrojs/vercel/static";
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,16 +13,16 @@ export default defineConfig({
   markdown: {
     shikiConfig: {
       theme: "css-variables",
-      wrap: true
-    }
+      wrap: true,
+    },
   },
   experimental: {
-    assets: true
+    assets: true,
   },
   image: {
-    service: sharpImageService()
+    service: sharpImageService(),
   },
   integrations: [tailwind(), mdx(), svelte(), react(), prefetch()],
   output: "static",
-  adapter: vercelStatic()
+  adapter: vercelStatic(),
 });

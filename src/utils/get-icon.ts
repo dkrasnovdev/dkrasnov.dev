@@ -7,7 +7,7 @@ import {
   IconBrandZod,
   IconBrandNextJS,
   IconBrandReactHookForm,
-  IconBrandNeovim
+  IconBrandNeovim,
 } from "$components/icons";
 import type { SvelteComponent } from "svelte";
 
