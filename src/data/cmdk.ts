@@ -92,13 +92,8 @@ const groups: Array<Group> = [
     items: [
       {
         icon: "FileCv",
-        name: "CV (Light)",
-        href: "/dkrasnov-cv-light.pdf",
-      },
-      {
-        icon: "FileCv",
-        name: "CV (Dark)",
-        href: "/dkrasnov-cv-dark.pdf",
+        name: "CV (Simple)",
+        href: "/dkrasnov-cv-simple.pdf",
       },
     ],
   },
