@@ -12,10 +12,10 @@
     "url": "https://github.com/dkrasnovdev/siberiana-minio"
   },
   {
-    "name": "Strong Password Validation",
+    "name": "Secure Sign Up Form",
     "description": "Registration form with secure password using Zod",
-    "tags": ["react-hook-form", "zod"],
-    "url": ""
+    "tags": ["react", "react-hook-form", "zod"],
+    "url": "https://github.com/dkrasnovdev/secure-sign-up-form"
   },
   {
     "name": "Multiple Entries Form",
