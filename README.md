@@ -10,5 +10,5 @@
 git clone https://github.com/dkrasnov/dkrasnov.dev.git
 cd dkrasnov.dev
 pnpm install
-pnpm run dev
+pnpm dev
 ```
